@@ -1,8 +1,15 @@
-## Microsoft Engage 2021 Challenge ([Challenge Details](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af))
-
-### <ins>PROJECT</ins> : BUILD A MICROSOFT TEAMS CLONE
+### <ins>PROJECT</ins> : BUILD A MICROSOFT TEAMS CLONE (Microsoft Engage 2021 Challenge [[Challenge Details](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af)])
 
 #### Details: Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
+
+## <ins>Tech Stack Used</ins>
+1. React.js
+2. JavaScript
+3. MongoDB
+4. WebRTC
+
+## <ins>Solution Functionalities</ins>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
