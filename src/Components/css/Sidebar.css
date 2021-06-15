@@ -1,0 +1,14 @@
+#Sidebar_column
+{
+    background-color: #ebebeb;
+    width:11vh;
+    height: 91vh; 
+    box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.4);
+    padding-right:0.1rem;
+   
+}
+
+a{
+    text-decoration: none;
+}
+

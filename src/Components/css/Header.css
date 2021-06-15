@@ -1,0 +1,104 @@
+h3{
+    margin-left: 1.5rem;
+}
+
+#header{
+    background-color: #464775;
+    padding:0.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+}
+
+#searchicon{
+    background-color: #dadae3;
+    height:1.7rem;
+    border-radius:0px 5px 5px  0px;
+   
+}
+#searchbar{
+    background-color: #dadae3;
+    border-radius:5px 0px 0px  5px;
+    padding:0.5rem;
+    height:0.7rem;
+    width:500px;
+    margin-top: 0.2rem;
+}
+#searchbar::placeholder{
+    color:#464775;
+}
+
+#teams_heading{
+ 
+    padding-left:10% ;
+    text-align: left;
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+    width: 22rem;
+    margin-top: 0.2rem;
+   
+
+   
+}
+
+#headergrid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#user_image
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 90%;
+    margin-left: 60%;
+    margin-right: 0.3rem;
+}
+
+#header_right{
+    width:10rem;
+ 
+}
+
+#settings_icon:hover{
+color:grey;
+}
+#settings_menu{
+height:200px;
+width:370px;
+background-color: white;
+box-shadow: 2px 4px 4px rgb(146, 146, 146);
+display: none;
+position:fixed;
+margin-left: 55rem;
+margin-top: 3rem;
+z-index: 1;
+
+}
+
+.settings_menu_img{
+    width:40%;
+    margin: 0.5rem;
+    margin-left: 1.2rem;
+    margin-top: 0rem;
+}
+
+.settings_menu_img:hover{
+    width:35%;
+    padding:0.5rem;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(201, 201, 201, 0.644);
+    border-bottom: solid 5px #b396f7;
+}
+
+#modes{
+    margin-left: 3rem;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.light_mode_title{
+    margin-left: 1rem;
+}
