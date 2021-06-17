@@ -8,36 +8,68 @@ import SendIcon from '@material-ui/icons/Send';
 import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
 import Picker from 'emoji-picker-react';
+import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
+import MicIcon from '@material-ui/icons/Mic';
+import MicNoneIcon from '@material-ui/icons/MicNone';
+
 
 
 function showEmoji() {
-
-
-
     var x = document.getElementById("Emoji_List");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
-  }
+}
 
 function Chat() {
- 
-        const [chosenEmoji, setChosenEmoji] = useState(null);
-         
+
+       const { transcript, resetTranscript } = useSpeechRecognition();
+  
+
        
+       //For starting voice transcription
+       var [record, setRecord] = useState(() => null);
+    
+       if(record!=null)
+       {
+       if(record===true)
+       {
+     
+       SpeechRecognition.startListening();
+       document.getElementById("chat_message_input").value= transcript;
+    
+   
+       }
+       if(record===false)
+       {
+    
+        SpeechRecognition.stopListening();
+        record=null;
+      
+        
+       }
+
+      
+      }
+
+       //Selecting emoji from emoji picker
+        const [chosenEmoji, setChosenEmoji] = useState(null);
+        
         const onEmojiClick = (event, emojiObject) => {
           setChosenEmoji(emojiObject);
           if(chosenEmoji)
-         document.getElementById("mytextarea").value+= chosenEmoji.emoji;
+          {
+         document.getElementById("chat_message_input").value+= chosenEmoji.emoji;
+          }
         
         };
 
 
         
     return (
-        <div>
+        <div id="chat_page">
 <div className="messenger" >
 <Sidebar/>
    <div id="chat_menu">
@@ -60,10 +92,17 @@ function Chat() {
       
    <div className="chat_box_bottom"> 
        
-    <textarea id="mytextarea" id="chat_message_input" placeholder="Type a new message" 
+    <textarea  id="chat_message_input" placeholder="Type a new message" 
      
-    />
-    
+    /> 
+     {record ? (
+          <MicIcon id="recording" fontSize="35" onClick={(e) => setRecord(false)} />
+        ) : (
+          <MicNoneIcon id="not_recording"
+            fontSize="35"
+            onClick={(e) => setRecord(true)}
+          />
+        )}
     <div id="chat_send">
    
         <AttachFileIcon />

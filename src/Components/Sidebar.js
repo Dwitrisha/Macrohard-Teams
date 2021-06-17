@@ -14,28 +14,13 @@ function Sidebar() {
 
     return (
         <div>
-            
-            <div id="Sidebar_column">
-
-    <main>
-<div >
-<SidebarOption icon_img={<PeopleOutlineIcon />} icon_name="Teams"/> 
-<SidebarOption icon_img={<TodayIcon />} icon_name="Calendar"/>
-<SidebarOption icon_img={<ChatIcon />} icon_name="Chat"/>
-<SidebarOption icon_img={<PhoneIcon/>} icon_name="Calls"/>
-</div>
-
-    </main>
-
-  
-      
-    
-        
-
-            
-
-         
-    
+            <div id="Sidebar_column"> 
+                <div >
+                    <SidebarOption icon_img={<PeopleOutlineIcon />} icon_name="Teams"/> 
+                    <SidebarOption icon_img={<TodayIcon />} icon_name="Events"/>
+                    <SidebarOption icon_img={<ChatIcon />} icon_name="Chat"/>
+                    <SidebarOption icon_img={<PhoneIcon/>} icon_name="Calls"/>
+                </div>
               </div>
         </div>
     )

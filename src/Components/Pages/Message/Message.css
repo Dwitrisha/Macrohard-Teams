@@ -20,6 +20,7 @@ margin-top:1.8rem;
     max-width: 300;
     font-size: 1rem;
     margin-top:0.8rem;
+    box-shadow: 2px 2px 4px rgb(126, 126, 126);
 }
 
 .message_time{
@@ -40,4 +41,5 @@ margin-top:1.8rem;
 .message.own .message_text{
    background-color: white;
    color: black;
+
 }

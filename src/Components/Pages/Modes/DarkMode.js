@@ -1,10 +1,24 @@
 import React from 'react'
+import Call from '../Call'
+import Chat from '../Chat'
 
 function DarkMode() {
 
-  {/*Dark Mode styling for chat page */}
+ 
+    //Dark Mode for header 
 
-  document.getElementById("Sidebar_column").style.backgroundColor="#141414";
+   document.getElementById("Sidebar_column").style.backgroundColor="#141414";
+   document.getElementById("header").style.backgroundImage="linear-gradient(to left, black ,#232324)";
+   document.getElementById("searchbar").style.backgroundColor="grey";
+   document.getElementById("searchbar").style.color="white";
+   document.getElementById("searchicon").style.backgroundColor="grey";
+   document.getElementById("searchicon").style.color="black";
+   document.getElementById("settings_menu").style.backgroundColor="black";
+   document.getElementById("settings_menu").style.color="white";
+
+    //Dark Mode styling for chat page 
+    if(document.getElementById("chat_page")!=null)
+    {
    document.getElementById("chat_menu").style.backgroundColor="#141414";
    document.getElementById("chat_menu_heading").style.color="white";
    document.getElementById("message_heading").style.color="white";
@@ -19,26 +33,18 @@ function DarkMode() {
    document.getElementById("message_heading").style.backgroundColor="#1f1f1f";
    document.getElementById("message_heading").style.borderBottom="solid 1.5px  #0a0a0a";
    document.getElementById("chat_menu_heading").style.borderBottom=" solid 1.5px #000000 ";
-   document.getElementById("header").style.backgroundColor=" #0a0a0a";
-   document.getElementById("searchbar").style.backgroundColor="grey";
-   document.getElementById("searchbar").style.color="white";
-   document.getElementById("searchicon").style.backgroundColor="grey";
-   document.getElementById("searchicon").style.color="black";
-   document.getElementById("settings_menu").style.backgroundColor="black";
-   document.getElementById("settings_menu").style.color="white";
    document.getElementById("chat_send").style.color="white";
+    }
 
 
-
-  
-  
-
- 
-
-  
- 
-
+   //Dark Mode styling for call page
+   if(document.getElementById("call")!=null)
+   {
+    document.getElementById("callbox_grid").style.backgroundImage="linear-gradient(to top,black,#282829)";
+    
+   }
    
+  
    
   
 }

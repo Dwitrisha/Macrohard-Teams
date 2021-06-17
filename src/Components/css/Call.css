@@ -1,6 +1,71 @@
 #call{
-    background-color: pink;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+
+   display: flex;
+   height:91vh;
   }
+
+  #callbox_grid{
+    background-image: linear-gradient(to top,#ede9f7,#f5f5f5,#ede9f7);
+   
+  }
+
+#call_boxes_wrapper{
+  flex:7.5;
+  background-color: #ffffff;
+}
+
+
+#callbox_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+ padding-left: 14rem;
+ padding-top:7rem;
+ padding-right: 7rem;
+ height:72.5vh;
+ 
+   }
+ 
+ #call_option{
+  width:70%;
+  height: 20rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgb(114, 114, 114);
+  border:#c8c9ee solid 1px;
+}
+
+#call_button
+{
+  width: 70%;
+  height: 30px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #464775,#5e45a2, #685bdd, #464775);
+  background-size: 200%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  bottom: 4px;
+  left: 0%;
+  right: 0%;
+  box-shadow: 2px 2px 4px rgb(54, 53, 53);
+  margin-left: 15%;
+
+}
+
+#call_button:hover {
+  background-position: right;
+
+}
+
+.call_icon{
+  margin-left: 6rem;
+  margin-top: 4rem;
+  color: #4d4e7c;
+}

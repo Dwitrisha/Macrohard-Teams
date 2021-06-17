@@ -24,8 +24,8 @@
     display: block;
     background-color: #f5f5f5;
     width: 100%;
-   
-   
+    box-shadow: 20px 0 20px -20px #d2d9f5 inset;
+
     
  
    }
@@ -49,27 +49,24 @@ display:flex;
 flex:2.5;
 background-color: #f0f0f0;
 height:91vh;
-box-shadow: inset -7px 0 9px -7px rgba(99, 99, 99, 0.4);
+box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
+
   
   }
 
-.chat_menu_input{
-  width: 90%;
-  border:none;
-  border-bottom: 1px solid grey;
-
-}
 
 #chat_box{
     flex:7;
     background-color: #f5f5f5;
+    box-shadow: 20px 0 20px -20px #d2d9f5 inset;
+    height:91vh;
       }
 
 
-      .chat_box_top{
-        overflow-x: hidden ;
-        overflow-y:scroll;
-        height: 73vh;
+.chat_box_top{
+    overflow-x: hidden ;
+    overflow-y:scroll;
+    height: 73vh;
       }
 
 
@@ -84,10 +81,10 @@ box-shadow: inset -7px 0 9px -7px rgba(99, 99, 99, 0.4);
 
 #chat_send{
   text-align: left;
-  
   color: #464775;
   padding-left: 4rem;
-  background-color: #f5f5f5;
+  background-color: #f5f5f500;
+  box-shadow: 20px 0 20px -20px #d2d9f5 inset;
 
 }
 
@@ -101,12 +98,13 @@ box-shadow: inset -7px 0 9px -7px rgba(99, 99, 99, 0.4);
 }
 
 #chat_message_input{
-  width:120vh;
-  height:20px;
+  width:108vh;
+  height:18px;
   padding:10px;
-  margin-left: 4rem;
+  margin-left: 4.8rem;
   border:none;
-  border-bottom: solid 2px #464775;
+  border: solid 2px #b199f3;
+  border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 2rem;
   
@@ -122,12 +120,14 @@ box-shadow: inset -7px 0 9px -7px rgba(99, 99, 99, 0.4);
   padding:0;
   height:100%;
 
+
 }
 
 .chat_messages_wrapper{
   padding:0px 20px;
   height:100%;
   padding-top: 4rem;
+ 
 
 }
 
@@ -135,6 +135,21 @@ box-shadow: inset -7px 0 9px -7px rgba(99, 99, 99, 0.4);
 #Emoji_List{
   display: none;
   position: fixed;
-  margin-top: 7rem;
+  margin-top: 8.5rem;
   margin-left: 4rem;
+}
+
+#recording,#not_recording{
+  border: solid 2px #b199f3;
+  padding:0.5rem;
+  border-radius: 90%;
+  margin-left:0.5rem ;
+}
+
+#not_recording{
+color:#464775;
+}
+
+#recording{
+  color:#b199f3;
 }
