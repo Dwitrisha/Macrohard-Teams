@@ -32,6 +32,7 @@ function LightMode() {
    document.getElementById("message_heading").style.borderBottom="solid 1.5px  #f5f5f5";
    document.getElementById("chat_menu_heading").style.borderBottom=" solid 1.5px rgb(207, 207, 207)";
    document.getElementById("chat_send").style.color="#464775";
+   document.getElementById("chat_message_input").style.color="black";
     }
   
    //Light Mode for call mode
