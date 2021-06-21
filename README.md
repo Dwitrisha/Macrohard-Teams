@@ -11,7 +11,7 @@ Your solution should be a fully functional prototype with at least one mandatory
 
 ## <ins>Solution Functionalities</ins>
 
-Video Meeting component was opensourced from and repurposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting).
+Video Meeting component was opensourced and repurposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
