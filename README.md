@@ -5,9 +5,11 @@ Your solution should be a fully functional prototype with at least one mandatory
 
 ## <ins>Tech Stack Used</ins>
 1. React.js
-2. JavaScript
-3. MongoDB
-4. WebRTC
+2. Node.js
+3. JavaScript
+4. MongoDB
+5. WebRTC
+6. Socket.io
 
 ## <ins>Solution Functionalities</ins>
 
