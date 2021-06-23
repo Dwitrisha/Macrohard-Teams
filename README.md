@@ -3,6 +3,17 @@
 ### <ins>Details</ins> 
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
+### <ins>Solution Functionalities</ins>
+
+#### Multi-user Video Calling + Realtime Chat
+The Video Chat includes following functionalities:
+1. Screen Sharing
+2. Audio mute/unmute
+3. Video on/off
+4. Realtime Chat
+5. Start a meeting/ Join a chat with URL
+
+
 ### <ins>Tech Stack Used</ins>
 1. React.js
 2. Node.js
@@ -10,8 +21,6 @@ Your solution should be a fully functional prototype with at least one mandatory
 4. MongoDB
 5. WebRTC
 6. Socket.io
-
-### <ins>Solution Functionalities</ins>
 
 ### <ins>Open-source Credits</ins>
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting).
