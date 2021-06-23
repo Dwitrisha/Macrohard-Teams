@@ -1,7 +1,6 @@
 ## <ins>PROJECT</ins> : BUILD A MICROSOFT TEAMS CLONE  ( [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
 
-### <ins>Details</ins> 
-Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
+### <ins>Solution Functionalities</ins> 
 
 * ***Multi-user Video Calling + Realtime Chat***
 
@@ -24,6 +23,10 @@ Your solution should be a fully functional prototype with at least one mandatory
 
 ### <ins>Open-source Credits</ins>
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting).
+
+
+### <ins>Details</ins> 
+Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
