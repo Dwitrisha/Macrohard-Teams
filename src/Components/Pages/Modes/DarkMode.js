@@ -26,6 +26,7 @@ function DarkMode() {
    document.getElementById("conversation").style.color="white";
    document.getElementById("conversation").style.backgroundColor="rgba(99, 99, 99, 0)";
    document.getElementById("chat_box").style.backgroundColor="#1f1f1f";
+   document.getElementById("chat_box_bottom").style.backgroundColor="#1f1f1f";
    document.getElementById("chat_send").style.backgroundColor="#1f1f1f";
    document.getElementById("chat_message_input").style.backgroundColor="rgb(56, 56, 56)";
    document.getElementById("chat_message_input").style.color="white";
@@ -34,13 +35,17 @@ function DarkMode() {
    document.getElementById("message_heading").style.borderBottom="solid 1.5px  #0a0a0a";
    document.getElementById("chat_menu_heading").style.borderBottom=" solid 1.5px #000000 ";
    document.getElementById("chat_send").style.color="white";
+   
     }
 
 
    //Dark Mode styling for call page
-   if(document.getElementById("call")!=null)
+   if(document.getElementById("homepage")!=null)
    {
-    document.getElementById("callbox_grid").style.backgroundImage="linear-gradient(to top,black,#282829)";
+    document.getElementById("call_grid").style.backgroundImage="linear-gradient(to top,black,#282829)";
+    document.getElementById("call_heading").style.color="white";
+    document.getElementById("call_heading2").style.color="white";
+    document.getElementById("theme_heading").style.color="white";
     
    }
    

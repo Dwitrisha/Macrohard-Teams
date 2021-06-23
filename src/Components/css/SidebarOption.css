@@ -2,11 +2,11 @@
 #icon_img{
     padding: 0.5rem;  
    color: #707070;
-  padding-left: 0.7rem;
+  padding-left: 0.5rem;
   margin-left: 0.5rem;
   background-color:#ebebeb00;
-  width:5vh;
-  height:5vh;
+  width:8vh;
+  height:8vh;
   border-radius: 90%;
   box-shadow: 2px 2px 4px rgb(138, 138, 138);
   margin-bottom: 0.1rem;
@@ -28,7 +28,7 @@
     text-decoration: none;
     font-size: 0.7rem;
     font-weight: 600;
-    margin-left:1rem;
+    margin-left:0.3rem;
     margin-bottom: 0.7rem;
     margin-top: 0.5rem;
 

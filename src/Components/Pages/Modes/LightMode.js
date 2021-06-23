@@ -6,7 +6,7 @@ function LightMode() {
 
   
   //Light Mode for header 
-   document.getElementById("Sidebar_column").style.backgroundColor="#ebebeb";
+   document.getElementById("Sidebar_column").style.backgroundColor="#eeecf7";
    document.getElementById("header").style.backgroundColor=" #464775";
    document.getElementById("searchbar").style.backgroundColor="#dadae3";
    document.getElementById("searchicon").style.backgroundColor="#dadae3";
@@ -25,6 +25,7 @@ function LightMode() {
    document.getElementById("conversation_name").style.color="black";
    document.getElementById("conversation").style.backgroundColor="rgba(99, 99, 99, 0)";
    document.getElementById("chat_box").style.backgroundColor="#f5f5f5";
+   document.getElementById("chat_box_bottom").style.backgroundColor="#f5f5f5";
    document.getElementById("chat_send").style.backgroundColor="#f5f5f5";
    document.getElementById("chat_message_input").style.backgroundColor="white";
    document.getElementById("chat_message_input").style.borderBottom=" solid 2px #464775";
@@ -36,9 +37,12 @@ function LightMode() {
     }
   
    //Light Mode for call mode
-   if(document.getElementById("call")!=null)
+   if(document.getElementById("homepage")!=null)
    {
-    document.getElementById("callbox_grid").style.backgroundImage="linear-gradient(to top,#ede9f7,#f5f5f5,#ede9f7)";
+    document.getElementById("call_grid").style.backgroundImage="linear-gradient(to top,#ede9f7,#f5f5f5,#ede9f7)";
+    document.getElementById("call_heading").style.color="black";
+    document.getElementById("call_heading2").style.color="black";
+    document.getElementById("theme_heading").style.color="black";
  
    }
    

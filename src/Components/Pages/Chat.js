@@ -90,24 +90,28 @@ function Chat() {
         </div>
        <div className="chat_box_background">
       
-   <div className="chat_box_bottom"> 
+   <div id="chat_box_bottom"> 
        
+       <div id="text_container">
     <textarea  id="chat_message_input" placeholder="Type a new message" 
      
     /> 
+    <div id="mic">
      {record ? (
-          <MicIcon id="recording" fontSize="35" onClick={(e) => setRecord(false)} />
+          <MicIcon id="recording"   style={{fontSize:40}} onClick={(e) => setRecord(false)} />
         ) : (
           <MicNoneIcon id="not_recording"
-            fontSize="35"
+          style={{fontSize:40}}
             onClick={(e) => setRecord(true)}
           />
         )}
+        </div>
+        </div>
     <div id="chat_send">
    
         <AttachFileIcon />
         <SentimentVerySatisfiedIcon onClick={showEmoji}/>
-        <SendIcon style={{ marginLeft:"42rem"}}/>
+        <SendIcon style={{ marginLeft:"39rem"}}/>
       
         </div>
     </div>

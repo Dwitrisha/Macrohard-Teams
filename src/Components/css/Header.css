@@ -1,5 +1,7 @@
 h3{
     margin-left: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 #header{
@@ -8,11 +10,14 @@ h3{
     padding-top: 0.5rem;
     padding-bottom: 0.7rem;
     background-image: linear-gradient(to left, #464775 ,#717396, #464775 );
+    width:100vw;
+    position:fixed;
+
 }
 
 #searchicon{
     background-color: #dadae3;
-    height:1.7rem;
+    height:1.6rem;
     border-radius:0px 5px 5px  0px;
    
 }
@@ -20,9 +25,9 @@ h3{
     background-color: #dadae3;
     border-radius:5px 0px 0px  5px;
     padding:0.5rem;
-    height:0.7rem;
+    height:0.6rem;
     width:500px;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
 }
 #searchbar::placeholder{
     color:#464775;
@@ -94,12 +99,12 @@ z-index: 1;
 }
 
 #modes{
-    margin-left: 3rem;
+    margin-left: 1.5rem;
     margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .light_mode_title{
-    margin-left: 1rem;
+    margin-left: 0.3rem;
 }

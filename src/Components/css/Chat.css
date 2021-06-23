@@ -18,19 +18,24 @@
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0.5rem;
-    padding-left: 2rem;
-    border-bottom: solid 1.4px rgb(228, 228, 228);
+    text-align: left;
+    border-bottom: solid 1.4px rgb(199, 199, 199);
     position: fixed;
     display: block;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     width: 100%;
     box-shadow: 20px 0 20px -20px #d2d9f5 inset;
+    
+ 
 
     
  
    }
 
-
+#mic{
+  padding-top: 1.7rem;
+  padding-right:20rem;
+}
   
 
 
@@ -48,9 +53,10 @@ display:flex;
 #chat_menu{
 flex:2.5;
 background-color: #f0f0f0;
-height:91vh;
+height:91.7vh;
 box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
-
+margin-top: 8.3vh;
+margin-left: 11vh;
   
   }
 
@@ -70,21 +76,22 @@ box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
       }
 
 
-.chat_box_bottom{
+#chat_box_bottom{
   position: fixed;
   display: block;
-  margin-top: 73vh;
-
-  
-
+  margin-top: 70vh;
+  height:50vh;
+  background-color: #f5f5f5;
+  box-shadow: 20px 0 20px -20px #d2d9f5 inset;
 }
 
 #chat_send{
   text-align: left;
   color: #464775;
-  padding-left: 4rem;
-  background-color: #f5f5f500;
-  box-shadow: 20px 0 20px -20px #d2d9f5 inset;
+ margin-left: 4rem;
+
+
+ 
 
 }
 
@@ -98,9 +105,8 @@ box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
 }
 
 #chat_message_input{
-  width:108vh;
-  height:18px;
-  padding:10px;
+  width:50vw;
+  height:2.2rem;
   margin-left: 4.8rem;
   border:none;
   border: solid 2px #b199f3;
@@ -110,10 +116,18 @@ box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
   
 }
 
+#text_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 
+ 
+
+}
  .chat_box_wrapper{
   padding:0;
   height:100%;
+  margin-top: 8.5vh;
 
 }
 .chat_menu_wrapper{

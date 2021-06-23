@@ -34,7 +34,7 @@ function Header() {
 <MoreHorizIcon style={{ color: "white", fontSize:25 }} id="settings_icon" onClick={Show_Options} />
 </div>
 <div id="settings_menu">
- <h3>Themes</h3>
+ <h3 id="theme_heading">Themes</h3>
     <img className="settings_menu_img" src={Dark} onClick={DarkMode}/>
    
     <img className="settings_menu_img" src={Light} onClick={LightMode}/>
