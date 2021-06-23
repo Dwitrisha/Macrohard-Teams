@@ -15,12 +15,12 @@ Your solution should be a fully functional prototype with at least one mandatory
 
 
 ### <ins>Tech Stack Used</ins>
-* React.js
-* Node.js
-* JavaScript
-* MongoDB
-* WebRTC
-* Socket.io
+- React.js
+- Node.js
+- JavaScript
+- MongoDB
+- WebRTC
+- Socket.io
 
 ### <ins>Open-source Credits</ins>
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting).
