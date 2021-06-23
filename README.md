@@ -3,7 +3,7 @@
 ### <ins>Details</ins> 
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
-* *Multi-user Video Calling + Realtime Chat*
+* ** *Multi-user Video Calling + Realtime Chat* **
 
 The Video Chat includes following functionalities:
 1. Screen Sharing
