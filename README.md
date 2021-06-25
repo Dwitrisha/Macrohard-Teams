@@ -9,7 +9,8 @@
   2.Audio mute/unmute\
   3.Video on/off\
   4.Realtime Chat\
-  5.Start a meeting/ Join a chat with URL
+  5.Record video using [react-media-recorder](https://www.npmjs.com/package/react-media-recorder)
+  6.Start a meeting/ Join a chat with URL
   
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/).
 
