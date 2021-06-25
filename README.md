@@ -5,7 +5,7 @@
 * ***Multi-user Video Calling + Realtime Chat*** - 
   The Video Chat includes following functionalities:
 
-  1.Screen Sharing \                           
+  1.Screen Sharing\                          
   2.Audio mute/unmute\
   3.Video on/off\
   4.Realtime Chat\
