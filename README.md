@@ -9,7 +9,7 @@
   2.Audio mute/unmute\
   3.Video on/off\
   4.Realtime Chat\
-  5.Record video using [videojs-record](https://npm.io/package/videojs-record)\
+  5.Record video using [react-media-recorder](https://github.com/wmik/use-media-recorder)\
   6.Email participants using [EmailJS](https://www.emailjs.com/)\
   7.Start a meeting/ Join a chat with URL
   
