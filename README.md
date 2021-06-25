@@ -12,7 +12,7 @@
   5.Record video using [react-media-recorder](https://www.npmjs.com/package/react-media-recorder)\
   6.Start a meeting/ Join a chat with URL
   
-  #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/).
+  #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
 ### <ins>Tech Stack Used</ins>
 - React.js
