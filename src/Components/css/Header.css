@@ -73,13 +73,12 @@ color:grey;
 #settings_menu{
 height:200px;
 width:370px;
-background-color: white;
+background-color: rgb(199, 199, 199);
 box-shadow: 2px 4px 4px rgb(146, 146, 146);
 display: none;
-position:fixed;
+position:absolute;
 margin-left: 55rem;
 margin-top: 3rem;
-z-index: 1;
 
 }
 
@@ -88,13 +87,14 @@ z-index: 1;
     margin: 0.5rem;
     margin-left: 1.2rem;
     margin-top: 0rem;
+
 }
 
 .settings_menu_img:hover{
     width:35%;
     padding:0.5rem;
     border-radius: 0 0 5px 5px;
-    background-color: rgba(201, 201, 201, 0.644);
+    background-color: rgb(255, 255, 255);
     border-bottom: solid 5px #b396f7;
 }
 

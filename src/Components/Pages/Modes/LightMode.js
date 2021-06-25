@@ -12,8 +12,10 @@ function LightMode() {
    document.getElementById("searchicon").style.backgroundColor="#dadae3";
    document.getElementById("searchbar").style.color="black";
    document.getElementById("settings_menu").style.color="black";
-   document.getElementById("settings_menu").style.backgroundColor="white";
+   document.getElementById("settings_menu").style.backgroundColor="rgb(199, 199, 199)";
    document.getElementById("header").style.backgroundImage="linear-gradient(to left, #464775 ,#717396, #464775 )";
+   document.getElementById("theme_heading").style.color="black";
+   document.getElementById("modes").style.color="black";
 
     //Light Mode styling for chat page 
 
@@ -29,8 +31,7 @@ function LightMode() {
    document.getElementById("chat_send").style.backgroundColor="#f5f5f5";
    document.getElementById("chat_message_input").style.backgroundColor="white";
    document.getElementById("chat_message_input").style.borderBottom=" solid 2px #464775";
-   document.getElementById("message_heading").style.backgroundColor="#f5f5f5";
-   document.getElementById("message_heading").style.borderBottom="solid 1.5px  #f5f5f5";
+   document.getElementById("message_heading").style.borderBottom="solid 1.4px rgb(199, 199, 199)";
    document.getElementById("chat_menu_heading").style.borderBottom=" solid 1.5px rgb(207, 207, 207)";
    document.getElementById("chat_send").style.color="#464775";
    document.getElementById("chat_message_input").style.color="black";
@@ -42,10 +43,22 @@ function LightMode() {
     document.getElementById("call_grid").style.backgroundImage="linear-gradient(to top,#ede9f7,#f5f5f5,#ede9f7)";
     document.getElementById("call_heading").style.color="black";
     document.getElementById("call_heading2").style.color="black";
-    document.getElementById("theme_heading").style.color="black";
+
  
    }
    
+
+   //Light Mode for connecting page
+
+   if(document.getElementById("video_div")!=null)
+   {
+    document.getElementById("video_div").style.backgroundImage="linear-gradient(to top,#ede9f7,#f5f5f5,#ede9f7)";
+    document.getElementById("call_heading").style.color="black";
+    document.getElementById("input_name").style.color="black";
+    document.getElementById("person_icon").style.color="#464775";
+    
+
+   }
 
 }
 

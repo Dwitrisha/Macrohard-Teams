@@ -1,5 +1,9 @@
 .scheduler-container {
     height: 91vh;
-    width: 100vw;
+    width: 99vw;
+    margin-left: 11vh;
+    margin-top: 8.3vh;
+    position: relative;
+    z-index: 0;
    
 }

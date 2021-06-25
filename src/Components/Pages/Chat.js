@@ -81,10 +81,11 @@ function Chat() {
       </div>
       </div>
 
+
+   <div id="message_heading">Jane Doe</div>
    <div id="chat_box">
    <div className="chat_box_wrapper">
    <div className="chat_box_top">
-   <div id="message_heading">Jane Doe</div>
    <div id="Emoji_List">
         <Picker onEmojiClick={onEmojiClick} />
         </div>
