@@ -11,7 +11,7 @@
   4.Realtime Chat\
   5.Start a meeting/ Join a chat with URL
   
-  Video chat functionalities were implemented using WebRTC API.
+  #### Video chat functionalities were implemented using WebRTC API.
 
 ### <ins>Tech Stack Used</ins>
 - React.js
