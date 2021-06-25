@@ -10,7 +10,8 @@
   3.Video on/off\
   4.Realtime Chat\
   5.Record video using [videojs-record](https://npm.io/package/videojs-record)\
-  6.Start a meeting/ Join a chat with URL
+  6.Email participants using [EmailJS](https://www.emailjs.com/)\
+  7.Start a meeting/ Join a chat with URL
   
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
