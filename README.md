@@ -10,8 +10,8 @@
   2.Audio mute/unmute\
   3.Video on/off\
   4.Realtime Chat\
-  5.Record screen\
-  6.Email participants using [EmailJS](https://www.emailjs.com/)\
+  5.Email participants using [EmailJS](https://www.emailjs.com/)\
+  6.Record screen\
   7.Start a meeting/ Join a chat with URL
   
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
