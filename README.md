@@ -6,19 +6,19 @@
 * ***A. Multi-user Video Calling + Realtime Chat*** - 
   The Video Chat includes following functionalities:
 
-  1. Multiple participants can join
-  2. Live Video Transcription 
-  3. Screen Sharing   
-  4. Realtime Chat\                 
-  5. Audio mute/unmute\
-  6. Video on/off\
-  7. Email participants using [EmailJS](https://www.emailjs.com/)\
-  8. Record screen\
-  9. Start a meeting/ Join a chat with URL
+  1.Multiple participants can join
+  2.Live Video Transcription 
+  3.Screen Sharing   
+  4.Realtime Chat \                 
+  5.Audio mute/unmute \
+  6.Video on/off \
+  7.Email participants using [EmailJS](https://www.emailjs.com/)\
+  8.Record screen \
+  9.Start a meeting/ Join a chat with URL
 
 * ***B. Chatting*** - 
-  1. Group Chat Rooms to allow multiple participants to chat.
-  2. Emoji Picker to use during chatting.
+  1.Group Chat Rooms to allow multiple participants to chat.
+  2.Emoji Picker to use during chatting.
   
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
