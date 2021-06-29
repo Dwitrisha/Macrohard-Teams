@@ -16,11 +16,12 @@
   8. Record screen
   9. Start a meeting/ Join a chat with URL
 
+  #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
+  
 * ***Chatting -*** 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Emoji Picker to use during chatting
   
-  #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
 ### <ins>Tech Stack Used</ins>
 - React.js
