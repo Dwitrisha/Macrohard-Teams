@@ -3,7 +3,7 @@
 
 ### <ins>Solution Functionalities</ins> 
 
-### <ins><em>A. Multi-user Video Calling + Realtime Chat</em></ins>- 
+###<em>A.  <ins>Multi-user Video Calling + Realtime Chat</ins></em>- 
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
