@@ -3,7 +3,7 @@
 
 ### <ins>Solution Functionalities</ins> 
 
-### * <em>Multi-user Video Calling + Realtime Chat</em> - 
+### <em>A. Multi-user Video Calling + Realtime Chat</em> - 
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
@@ -16,7 +16,7 @@
   8. Record screen
   9. Start a meeting/ Join a chat with URL
 
-* ***Chatting*** - 
+### <em>B. Chatting</em> - 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Emoji Picker to use during chatting
   
