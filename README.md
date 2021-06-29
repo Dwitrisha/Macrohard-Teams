@@ -26,9 +26,11 @@
 - React.js
 - Node.js
 - JavaScript
-- MongoDB
 - WebRTC
 - Socket.io
+- HTML
+- CSS
+- Firebase
 
 ### <ins>Details</ins> 
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
