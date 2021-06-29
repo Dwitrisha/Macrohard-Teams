@@ -14,7 +14,7 @@
   6. Audio mute/unmute
   7. Video on/off
   8. Record screen
-  9. Start a meeting/ Join a chat with URL
+  9. Start a meeting or Join with URL
 
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
   
