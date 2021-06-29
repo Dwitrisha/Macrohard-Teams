@@ -3,16 +3,22 @@
 
 ### <ins>Solution Functionalities</ins> 
 
-* ***Multi-user Video Calling + Realtime Chat*** - 
+* ***A. Multi-user Video Calling + Realtime Chat*** - 
   The Video Chat includes following functionalities:
 
-  1.Screen Sharing                      
-  2.Audio mute/unmute\
-  3.Video on/off\
-  4.Realtime Chat\
-  5.Email participants using [EmailJS](https://www.emailjs.com/)\
-  6.Record screen\
-  7.Start a meeting/ Join a chat with URL
+  1. Multiple participants can join
+  2. Live Video Transcription 
+  3. Screen Sharing   
+  4. Realtime Chat\                 
+  5. Audio mute/unmute\
+  6. Video on/off\
+  7. Email participants using [EmailJS](https://www.emailjs.com/)\
+  8. Record screen\
+  9. Start a meeting/ Join a chat with URL
+
+* ***B. Chatting*** - 
+  1. Group Chat Rooms to allow multiple participants to chat.
+  2. Emoji Picker to use during chatting.
   
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
@@ -27,7 +33,7 @@
 ### <ins>Details</ins> 
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
-### <ins>Open-source Credits</ins>
+### <ins>Credits</ins>
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
