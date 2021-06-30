@@ -1,0 +1,18 @@
+.register_form{
+    margin-top: 10vh;
+    box-shadow: 2px 2px 4px rgb(180, 180, 180);
+    width:30vw;
+    margin-left: 35%;
+    height:50vh;
+    padding:2rem;
+    padding-bottom: 2rem;
+    
+}
+
+#register_page{
+    height:100vh;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+
+

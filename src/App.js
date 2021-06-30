@@ -8,31 +8,44 @@ import Calendar from './Components/Pages/Calendar';
 import {BrowserRouter as Router, 
   Switch, 
   Route,Link} from  "react-router-dom";
+import Register from './Components/Pages/Register';
+import Login from './Components/Pages/Login';
 
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				 <Header/>
-				<Router>
-					<Switch>
 				
-					<Route path="/" exact component={Home} />
+					<Router>
+	   				<Switch>	
+					<Route path="/" exact component={Login}/>
+		
+				
+					<Route path="/register">
+					<Register/>
+					</Route>
 
-          <Route path="/chat">
-           <Chat/>
-          </Route>
+					<Route path="/login">
+					<Login/>
+					</Route>
+			  
+			{/* <Route path="/" exact component={Home} /> */}
+				
 
-         <Route path="/calendar">
-           <Calendar/>
-         </Route>
+				
+					<Route path="/chat">
+					<Chat/>
+					</Route>
 
-		 <Route path="/call" exact component={Home} />
+					<Route path="/calendar">
+					<Calendar/>
+					</Route>
 
-						<Route path="/:url" component={Video} />
-					</Switch>
-				</Router>
+					<Route path="/home" component={Home} />
+					<Route path="/:url" component={Video} />  
+				  </Switch>
+	              </Router>
 			</div>
 		)
 	}

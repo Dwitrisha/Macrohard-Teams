@@ -12,7 +12,7 @@ h3{
     background-image: linear-gradient(to left, #464775 ,#717396, #464775 );
     width:100vw;
     position:fixed;
-
+    z-index: 99999;
 }
 
 #searchicon{

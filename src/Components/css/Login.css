@@ -1,0 +1,85 @@
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapperInner {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: 0;
+    background-image: linear-gradient(to top, #b3d9ff 30%, #ffccb3 70%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+    background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+
+}
+.waveMiddle {
+    background-size: 50% 120px;
+    background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+    background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+#login_page{
+    height:100vh;
+    padding-right: 2rem;
+}
+
+.login_form{
+    margin-top: 10vh;
+    box-shadow: 2px 2px 4px rgb(180, 180, 180);
+    width:30vw;
+    margin-left: 35%;
+    height:30vh;
+    padding:2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 99999;
+}
+
+label{
+    margin-top: 2rem;
+}
