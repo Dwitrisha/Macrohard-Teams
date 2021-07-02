@@ -21,7 +21,12 @@
 * ***Chatting -*** 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Emoji Picker to use during chatting
+
+* ***Task Planner -*** 
+  1. Group Chat Rooms to allow multiple participants to chat
+ 
   
+
 
 ### <ins>Tech Stack Used</ins>
 - React.js
