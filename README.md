@@ -20,7 +20,8 @@
   
 * ***Chatting -*** 
   1. Group Chat Rooms to allow multiple participants to chat
-  2. Emoji Picker to use during chatting
+  2. Uploading and sending files as link easily with a click
+  3. Emoji Picker to use during chatting
 
 * ***Task Planner -*** 
   1. Group Chat Rooms to allow multiple participants to chat
