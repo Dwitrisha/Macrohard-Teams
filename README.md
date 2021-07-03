@@ -24,7 +24,7 @@
   3. Emoji Picker to use during chatting
 
 * ***Task Planner -*** 
-  1. Group Chat Rooms to allow multiple participants to chat
+  1. Easy Drag and Drop UI
  
   
 
