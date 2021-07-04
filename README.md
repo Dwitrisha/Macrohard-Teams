@@ -23,11 +23,13 @@
   2. Uploading and sending files as link easily with a click
   3. Emoji Picker to use during chatting
 
-* ***Task Planner -*** 
-  1. Easy Drag and Drop UI
+* ***Drive -*** 
+  1. 
  
   
-
+* ***Notes -*** 
+  1. 
+ 
 
 ### <ins>Tech Stack Used</ins>
 - React.js
