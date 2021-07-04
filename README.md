@@ -1,7 +1,7 @@
 ## MACROHARD TEAMS: A MICROSOFT TEAMS CLONE  
 (Built for [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
 
-*Solution Functionalities~
+* *Solution Functionalities~*
 
 ### *<ins>Multi-user Video Calling + Realtime Chat</ins> -*
   The Video Chat includes following functionalities:
