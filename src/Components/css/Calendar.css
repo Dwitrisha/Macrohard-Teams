@@ -1,4 +1,9 @@
 #calendar_page{
     display:flex;
-    background-color: aqua;
+
+}
+
+#add_event{
+    margin-top:3vh;
+    cursor: pointer;
 }

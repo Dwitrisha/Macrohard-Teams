@@ -1,72 +1,42 @@
-import { db, auth } from "./firebase";
-import React, { useState, useEffect } from "react";
-import { Button, Input } from "@material-ui/core";
-import "../css/Login.css";
-import { Link,Redirect} from "react-router-dom";
-import Home from "../../Home";
+import { Button } from "@material-ui/core";
+import React from "react";
+import LoginPic from "../img/LoginPic.png"
+import { auth, provider } from "./firebase";
+import { actionTypes } from "./reducer";
+import { useStateValue } from "./StateProvider";
+import "../css/Login.css"
 
 function Login() {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [user, setUser] = useState(null);
-
-  const handleLogin = (e) => {
-    e.preventDefault();
+  const [{}, dispatch] = useStateValue();
+  const signIn = () => {
     auth
-      .signInWithEmailAndPassword(email, password)
+      .signInWithPopup(provider)
+      .then((result) => {
+        dispatch({
+          type: actionTypes.SET_USER,
+          user: result.user,
+        });
+      })
       .catch((error) => alert(error.message));
-
-      
   };
-
-
-
-
   return (
-    
-    <div>
-      <div id="login_page">
-        <div className="login-container" style={{ textAlign: "right" }}>
-          <Link to="/register">
-            <Button>Register</Button>
-          </Link>
-        </div>
-        <form className="login_form">
-          <Input
-            placeholder="EMAIL"
-            type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <br />
-
-          <Input
-            placeholder="PASSWORD"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <br />
-          <Button style={{ marginTop: "2rem" }} onClick={handleLogin}>
-            Login
-          </Button>
-        </form>
-
-        {user?.displayName ? (
-     <Home/>
-      
-      ) : (
-        <center>
-          <h3>Login to upload</h3>
-        </center>
-      )}
-      
+    <div className="login">
+        <div>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div id="login-container"> 
+      <h2 id="login_heading">Please login to continue</h2>
+      <img src={LoginPic} style={{width:"70%"}}></img>
+      <br/>
+      <Button id="login_button" type="submit" onClick={signIn}>
+       Login
+      </Button>
+      </div>
       </div>
 
-      
+   
     </div>
-    
   );
 }
 

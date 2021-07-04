@@ -23,8 +23,6 @@ function LightMode() {
     document.getElementById("chat_menu").style.backgroundColor = "#f0f0f0";
     document.getElementById("chat_menu_heading").style.color = "black";
     document.getElementById("message_heading").style.color = "black";
-    document.getElementById("conversation_name").style.color = "black";
-    document.getElementById("conversation_lm").style.color = "black";
     document.getElementById("conversation").style.backgroundColor =
       "rgba(99, 99, 99, 0)";
     document.getElementById("chat_box").style.backgroundColor = "#f5f5f5";

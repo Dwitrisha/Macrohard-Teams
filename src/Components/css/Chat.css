@@ -5,31 +5,34 @@
   }
 
   #chat_menu_heading{
-   font-size: 1.2rem;
+
+   font-size: 1.4rem;
    font-weight: 500;
-   padding-left: 6rem;
+   padding-left: 7rem;
    border-bottom: solid 1.5px rgb(207, 207, 207);
-   padding: 0.7rem;
-   padding-right: 2rem;
+   padding: 0.9rem;
+   padding-bottom: 0.45rem;
+   margin-bottom: 1rem;
+
 
   }
 
   #message_heading{
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 0.41rem;
+    padding: 0.5rem;
     text-align: left;
     border-bottom: solid 1.4px rgb(199, 199, 199);
     position: fixed;
     display: block;
     width: 100%;
-    box-shadow: 20px 0 20px -20px #d2d9f5 inset;
-    margin-top:8.3vh;
-    margin-left: 63.5vh;
-    
- 
+    margin-top:6.8vh;
+    margin-left: 29.5vw;
+    padding-top: 0.7rem;
+   padding-left: 2rem;
 
-    
+  
+      
  
    }
 
@@ -54,9 +57,9 @@ display:flex;
 #chat_menu{
 flex:2.5;
 background-color: #f0f0f0;
-height:91.7vh;
+height:93vh;
 box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
-margin-top: 8vh;
+margin-top: 6.8vh;
 margin-left: 11vh;
   
   }
@@ -67,7 +70,7 @@ margin-left: 11vh;
     background-color: #f5f5f5;
     box-shadow: 20px 0 20px -20px #d2d9f5 inset;
     height:80vh;
-    margin-top: 8.3vh;
+    margin-top:6.8vh;
       }
 
 
@@ -82,16 +85,17 @@ margin-left: 11vh;
 #chat_box_bottom{
   position: fixed;
   display: block;
-  margin-top: 66vh;
+  margin-top: 70vh;
   height:50vh;
   background-color: #f5f5f5;
   box-shadow: 20px 0 20px -20px #d2d9f5 inset;
+  padding-top: 1rem;
 }
 
 #chat_send{
   text-align: left;
   color: #464775;
- margin-left: 4rem;
+ margin-left: 8vw;
 
 
  
@@ -107,14 +111,47 @@ margin-left: 11vh;
   
 }
 
+#file_upload{
+  position:fixed;
+  display:block;
+  z-index: 99999;
+  background-image: linear-gradient(to top,#eeecf7,#d9daff);
+  border-radius: 5px;
+  padding:1rem;
+  margin-left: 6vw;
+  box-shadow: 2px 4px 4px rgb(197, 197, 197);
+}
+
+
+
+#upload_button {
+  width: 4rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(59, 12, 145);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+#upload_button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+#progress_close:hover{
+color: #464775;
+}
+
 #chat_message_input{
-  width:50vw;
+  width:55vw;
   height:1.5rem;
   border:none;
   border: solid 2px #b199f3;
   border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 2rem;
+  background-color: white;
   
 }
 
@@ -141,17 +178,17 @@ margin-left: 11vh;
 
 .chat_messages_wrapper{
   padding:0px 20px;
-  padding-top: 0.5rem;
 
- 
+
+
 
 }
 
 
 #Emoji_List{
   position: fixed;
-  margin-top: 6rem;
-  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-left: 6rem;
   z-index: 100000;
 }
 
@@ -168,4 +205,9 @@ color:#464775;
 
 #recording{
   color:#b199f3;
+}
+
+a:link,a:hover,a{
+text-decoration: none;
+color:black;
 }

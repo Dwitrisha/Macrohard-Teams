@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import Video from './Video'
 import Home from './Home'
 import Header from './Components/Header';
@@ -8,32 +8,27 @@ import Calendar from './Components/Pages/Calendar';
 import {BrowserRouter as Router, 
   Switch, 
   Route,Link} from  "react-router-dom";
-import Register from './Components/Pages/Register';
 import Login from './Components/Pages/Login';
+import Note from './Components/Pages/Note/Note';
+import Drive from './Components/Pages/Drive/Drive';
+import Todo from './Components/Pages/Todo/Todo';
+import { useStateValue } from './Components/Pages/StateProvider';
 
-
-class App extends Component {
-	render() {
+function App(){
+		const[{user},dispatch]=useStateValue();
 		return (
 			<div>
-				
-					<Router>
+				{!user?(<Login/>):(<Router>
 	   				<Switch>	
-					<Route path="/" exact component={Login}/>
-		
 				
-					<Route path="/register">
-					<Register/>
-					</Route>
-
-					<Route path="/login">
-					<Login/>
-					</Route>
-			  
-			{/* <Route path="/" exact component={Home} /> */}
+			 <Route path="/" exact component={Home} />
 				
 
 				
+					<Route path="/rooms/:roomId">
+					<Chat/>
+					</Route>
+					
 					<Route path="/chat">
 					<Chat/>
 					</Route>
@@ -41,14 +36,27 @@ class App extends Component {
 					<Route path="/calendar">
 					<Calendar/>
 					</Route>
+					
+					<Route path="/drive">
+					<Drive/>
+					</Route>
+					<Route path="/todo">
+					<Todo/>
+					</Route>
+
+						
+					<Route path="/notes">
+					<Note/>
+					</Route>
 
 					<Route path="/home" component={Home} />
 					<Route path="/:url" component={Video} />  
 				  </Switch>
-	              </Router>
+	              </Router>)}
+				
 			</div>
-		)
-	}
+		);
+	
 }
 
 export default App;

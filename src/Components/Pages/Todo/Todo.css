@@ -1,0 +1,13 @@
+#todo_page{
+    display:flex;
+  
+
+}
+
+#todo-container{
+flex:7.5;
+margin-left: 11vh;
+margin-top: 7vh;
+background-color: rgb(173, 88, 212);
+height: 92vh;
+}

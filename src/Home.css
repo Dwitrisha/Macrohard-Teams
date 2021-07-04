@@ -12,8 +12,8 @@ body {
 }
 
 #call_option {
-  width: 70%;
-  height: 60vh;
+  width: 25vw;
+  height: 57vh;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgb(114, 114, 114);
   border: #c8c9ee solid 1px;
@@ -21,17 +21,17 @@ body {
 }
 
 #call_button {
-  width: 70%;
+  width:11vw;
   height: 30px;
   border-radius: 25px;
   outline: none;
   border: none;
   background-image: linear-gradient(
     to right,
-    #464775,
-    #5e45a2,
-    #685bdd,
-    #464775
+    #33335f,
+    #483285,
+    #5548c9,
+    #3e3f77
   );
   background-size: 200%;
   font-size: 1rem;
@@ -46,7 +46,7 @@ body {
   left: 0%;
   right: 0%;
   box-shadow: 2px 2px 4px rgb(54, 53, 53);
-  margin-left: 15%;
+  margin-left: 20%;
 }
 
 #call_button:hover {
@@ -57,13 +57,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  padding-left: 14rem;
+  padding-left: 19rem;
   padding-top: 7rem;
   padding-right: 7rem;
   flex: 7.5;
   background-image: linear-gradient(to top, #ede9f7, #f5f5f5, #ede9f7);
-  margin-top: 8.3vh;
-  height: 91.6vh;
+  margin-top: 6.8vh;
+  height: 93vh;
 }
 
 #call_heading,
@@ -73,7 +73,17 @@ body {
 }
 
 #call_url {
+  
+  width:13vw;
   border: 2px solid#464775;
   border-radius: 5px;
   background-color: white;
+}
+
+#join_grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  padding-bottom: 70%;
 }

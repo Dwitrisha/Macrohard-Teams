@@ -1,0 +1,53 @@
+#drive_page{
+    display:flex;
+  
+
+}
+
+#drive-container{
+flex:7.5;
+margin-left: 11vh;
+margin-top: 7vh;
+background-image: linear-gradient(to top, #ede9f7, #f5f5f5, #ede9f7);
+height: 92vh;
+
+}
+
+#new-file{
+text-align: center;
+padding-left: 37vw;
+}
+
+
+#drive_button {
+  
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(
+      to right,
+      #33335f,
+      #483285,
+      #5548c9,
+      #3e3f77
+    );
+    background-size: 200%;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    bottom: 4px;
+    left: 0%;
+    right: 0%;
+    box-shadow: 2px 2px 4px rgb(54, 53, 53);
+ 
+  }
+  
+  #drive_button:hover {
+    background-position: right;
+  }
+

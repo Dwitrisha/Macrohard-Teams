@@ -49,7 +49,7 @@ var elms = 0;
 
 function showRecorder() {
 
-   
+   alert("Please allow sharing to start recording.")
   if (document.getElementById("recording-div").style.display === "none") {
     document.getElementById("recording-div").style.display = "block";
    
@@ -826,6 +826,7 @@ class Video extends Component {
 
                             <Input
                               type="text"
+                              placeholder="Blob URL"
                               value={mediaBlobUrl}
                               readOnly
                               style={{ border: "none" }}
@@ -866,6 +867,7 @@ class Video extends Component {
                         type="text"
                         name="to_name"
                       />
+                      <br/>
 
                       <label style={{ color: "white" }}>Email: </label>
                       <input
@@ -874,7 +876,7 @@ class Video extends Component {
                         style={{ marginLeft: "0.5rem" }}
                         name="to_email"
                       />
-
+   <br/>
                       <label style={{ color: "white" }}>Link: </label>
                       <input
                         className="form_input"

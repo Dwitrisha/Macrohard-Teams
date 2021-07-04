@@ -13,21 +13,26 @@ h3{
     width:100vw;
     position:fixed;
     z-index: 99999;
+    display: flex;
+  
 }
 
 #searchicon{
     background-color: #dadae3;
-    height:1.6rem;
+    height:4vh;
     border-radius:0px 5px 5px  0px;
+    
    
 }
 #searchbar{
     background-color: #dadae3;
     border-radius:5px 0px 0px  5px;
     padding:0.5rem;
-    height:0.6rem;
-    width:500px;
-    margin-top: 0.3rem;
+    height:1.8vh;
+    width:30vw;
+    flex:9;
+    margin-top: 0.2vh;
+
 }
 #searchbar::placeholder{
     color:#464775;
@@ -40,12 +45,15 @@ h3{
     color: white;
     font-size: 120%;
     font-weight: 500;
-    width: 22rem;
+    width: 30vw;
     margin-top: 0.2rem;
-   
+    margin-right: 15%;
+
 
    
 }
+
+
 
 #headergrid{
     display: grid;
@@ -63,7 +71,9 @@ h3{
 }
 
 #header_right{
-    width:10rem;
+    width:15vw;
+    margin-left: 1vw;
+ 
  
 }
 
@@ -77,7 +87,7 @@ background-color: rgb(199, 199, 199);
 box-shadow: 2px 4px 4px rgb(146, 146, 146);
 display: none;
 position:absolute;
-margin-left: 55rem;
+margin-left: 70vw;
 margin-top: 3rem;
 
 }

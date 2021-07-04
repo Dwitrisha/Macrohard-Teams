@@ -22,8 +22,6 @@ function DarkMode() {
     document.getElementById("chat_menu").style.backgroundColor = "#141414";
     document.getElementById("chat_menu_heading").style.color = "white";
     document.getElementById("message_heading").style.color = "white";
-    document.getElementById("conversation_name").style.color = "white";
-    document.getElementById("conversation_lm").style.color = "white";
     document.getElementById("conversation").style.color = "white";
     document.getElementById("conversation").style.backgroundColor =
       "rgba(99, 99, 99, 0)";

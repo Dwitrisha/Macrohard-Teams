@@ -1,0 +1,11 @@
+#schedule_form{
+    margin-top: 2vh;
+    position: fixed;
+    display: block;
+    z-index: 1000000;
+    background-color: rgb(128, 128, 128);
+    padding: 2rem;
+    border-radius: 5px;
+    margin-left: 38%;
+    
+}

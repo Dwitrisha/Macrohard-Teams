@@ -65,10 +65,10 @@ body {
   border: none;
   background-image: linear-gradient(
     to right,
-    #464775,
-    #5e45a2,
-    #685bdd,
-    #464775
+    #33335f,
+    #483285,
+    #5548c9,
+    #3e3f77
   );
   background-size: 200%;
   font-size: 1rem;
@@ -189,7 +189,7 @@ body {
   padding: 0.5rem;
   margin-left: 35%;
   box-shadow: 2px 2px 4px grey;
-  height:46vh;
+  height:35vh;
 
 }
 #send_button:hover {
@@ -216,7 +216,7 @@ body {
   position:fixed;
   margin-left: 28%;
   z-index: 100000;
-  margin-top: 60vh;
+  margin-top: 62vh;
  
 }
 

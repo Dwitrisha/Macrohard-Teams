@@ -1,85 +1,87 @@
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
+* {
+  margin: 0;
 }
 
-.waveWrapperInner {
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: 0;
-    background-image: linear-gradient(to top, #b3d9ff 30%, #ffccb3 70%);
-}
-.bgTop {
-    z-index: 15;
-    opacity: 0.5;
-}
-.bgMiddle {
-    z-index: 10;
-    opacity: 0.75;
-}
-.bgBottom {
-    z-index: 5;
-}
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-}
-.waveTop {
-    background-size: 50% 100px;
-    background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
-}
-.waveAnimation .waveTop {
-  animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
-
-}
-.waveMiddle {
-    background-size: 50% 120px;
-    background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')
-}
-.waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-}
-.waveBottom {
-    background-size: 50% 100px;
-    background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')
-}
-.waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
+.bg {
+  animation: slide 7s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #a3a4f5 50%, #c2c2f5 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
 
-#login_page{
-    height:100vh;
-    padding-right: 2rem;
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 10s;
 }
 
-.login_form{
-    margin-top: 10vh;
-    box-shadow: 2px 2px 4px rgb(180, 180, 180);
-    width:30vw;
-    margin-left: 35%;
-    height:30vh;
-    padding:2rem;
-    padding-bottom: 2rem;
-    position: fixed;
-    z-index: 99999;
+.bg3 {
+  animation-duration: 11s;
 }
 
-label{
-    margin-top: 2rem;
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+#login-container {
+  box-shadow: 2px 2px 4px rgb(182, 182, 182);
+  width: 40vw;
+  height: 45vh;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-top: 12%;
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#login_heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#login_button {
+  width: 10vw;
+  height: 35px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #33335f,
+    #483285,
+    #5548c9,
+    #3e3f77
+  );
+  background-size: 200%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 1.2rem;
+  bottom: 4px;
+  left: 0%;
+  right: 0%;
+  box-shadow: 2px 2px 4px rgb(54, 53, 53);
+  margin-left: 3%;
+}
+
+#login_button:hover {
+  background-position: right;
 }

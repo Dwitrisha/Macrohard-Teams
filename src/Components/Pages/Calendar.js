@@ -3,7 +3,15 @@ import Scheduler from "./Scheduler/Scheduler";
 import Sidebar from "../Sidebar";
 import "../css/Calendar.css";
 import Header from "../Header";
+import SchedulerForm from "./Scheduler/SchedulerForm";
+import { Button } from "@material-ui/core";
 
+function addEvent(){
+if(document.getElementById("event_form").style.display==="none")
+document.getElementById("event_form").style.display="block"
+else
+document.getElementById("event_form").style.display="none"
+}
 function Calendar() {
   const data = [
     {
@@ -26,6 +34,11 @@ function Calendar() {
       <div id="calendar_page">
         <Sidebar />
         <div id="scheduler-container" className="scheduler-container">
+          <div id="add_event" onClick={addEvent}>Add Event</div>
+          <div id ="event_form" style={{display:"none"}}>
+          <SchedulerForm/>
+          </div>
+       
           <Scheduler events={data} />
         </div>
       </div>

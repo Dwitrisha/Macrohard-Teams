@@ -1,8 +1,8 @@
 #conversation {
   display: flex;
-  align-items: center;
   padding: 10px;
   cursor: pointer;
+  height: 4rem;
 }
 
 #conversation:hover {
@@ -13,19 +13,34 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-right: 20px;
+  border: solid 2px rgb(175, 129, 250);
+  flex: 1px;
 }
 
 #conversation_name {
   font-weight: 500;
-  margin-right: 2rem;
-
+  margin-left: 1rem;
 }
 
-.each_conversation{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+#conversation_lm {
+  padding-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+
+#conversation_message{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 10rem;
+
+}
+a:link {
+  text-decoration: none;
+}
+
+#convo {
+  flex: 9;
+  text-align: left;
 
 }

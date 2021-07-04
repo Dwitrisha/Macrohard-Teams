@@ -6,6 +6,7 @@ import QueuePlayNextTwoToneIcon from "@material-ui/icons/QueuePlayNextTwoTone";
 import AddToQueueTwoToneIcon from "@material-ui/icons/AddToQueueTwoTone";
 import Sidebar from "./Components/Sidebar";
 import Header from "./Components/Header";
+import { useStateValue } from "./Components/Pages/StateProvider"
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -26,12 +27,10 @@ class Home extends Component {
     }
   };
 
-
   render() {
     return (
-
       <div id="homepage">
-        	<Header/>
+        <Header />
         <div className="container2">
           <Sidebar />
 
@@ -39,8 +38,9 @@ class Home extends Component {
             <div id="call_option">
               <p id="call_heading">Start a meeting</p>
               <QueuePlayNextTwoToneIcon
-                style={{ fontSize: 120, color: "#464775" }}
+                style={{ fontSize: 130, color: "#464775" }}
               />
+              <br/>
               <Button
                 id="call_button"
                 onClick={this.join}
@@ -52,9 +52,11 @@ class Home extends Component {
 
             <div id="call_option">
               <p id="call_heading2">Join a meeting</p>
+
               <AddToQueueTwoToneIcon
-                style={{ fontSize: 120, color: "#464775" }}
+                style={{ fontSize: 130, color: "#464775" }}
               />
+              <br/>
               <Input
                 id="call_url"
                 placeholder="URL"
