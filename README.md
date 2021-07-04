@@ -18,16 +18,16 @@
 
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
   
-* ***Chatting -*** 
+* ***<ins>Chatting</ins> -*** 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Uploading and sending files as link easily with a click
   3. Emoji Picker to use during chatting
 
-* ***Drive -*** 
+* ***<ins>Drive</ins> -*** 
   1. 
  
   
-* ***Notes -*** 
+* ***<ins>Notes</ins> -*** 
   1. 
  
 
