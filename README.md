@@ -1,9 +1,9 @@
 ## MACROHARD TEAMS: A MICROSOFT TEAMS CLONE  
 (Built for [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
 
-* Solution Functionalities~
+*Solution Functionalities~
 
-### * *<ins>Multi-user Video Calling + Realtime Chat</ins> -*
+### *<ins>Multi-user Video Calling + Realtime Chat</ins> -*
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
@@ -44,11 +44,11 @@
 - HTML
 - CSS
 - Firebase
-- 
-* Details~
+
+* *Details~*
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
-### <ins>Credits</ins>
+* *Credits~*
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
