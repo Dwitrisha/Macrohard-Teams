@@ -20,8 +20,9 @@
   
 * ***<ins>Chatting</ins> -*** 
   1. Group Chat Rooms to allow multiple participants to chat
-  2. Uploading and sending files as link easily with a click
-  3. Emoji Picker to use during chatting
+  2. Create new rooms real-time
+  3. Uploading and sending files as link easily with a click
+  4. Emoji Picker to use during chatting
 
 * ***<ins>Drive</ins> -*** 
   1. 
