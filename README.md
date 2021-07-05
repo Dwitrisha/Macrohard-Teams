@@ -3,7 +3,7 @@
 
  ###  :star: Adopt Feature Implemented :heavy_check_mark:
 
- ### :high_brightness:*Solution Functionalities :~*
+ ### :rocket:*Solution Functionalities :~*
  
 * ### <ins>Multi-user Video Calling + Realtime Chat</ins> ~
   The Video Chat includes following functionalities:
@@ -36,7 +36,7 @@
 * ### <ins>Tasks</ins> ~
   1. 
  
- ### :high_brightness:*Tech Stack Used :*~
+ ### :rocket:*Tech Stack Used :*~
 - React.js
 - Node.js
 - JavaScript
@@ -46,10 +46,10 @@
 - CSS
 - Firebase
 
- ### :high_brightness:*Details :*~
+ ### :rocket:*Details :*~
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
- ### :high_brightness:*Credits :*~
+ ### :rocket:*Credits :*~
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
 
 Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
