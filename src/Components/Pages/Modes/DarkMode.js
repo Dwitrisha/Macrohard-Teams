@@ -22,9 +22,12 @@ function DarkMode() {
     document.getElementById("chat_menu").style.backgroundColor = "#141414";
     document.getElementById("chat_menu_heading").style.color = "white";
     document.getElementById("message_heading").style.color = "white";
-    document.getElementById("conversation").style.color = "white";
-    document.getElementById("conversation").style.backgroundColor =
-      "rgba(99, 99, 99, 0)";
+    let x = document.getElementsByClassName("conversation");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.color = "white";
+        x[i].style.backgroundColor =   "rgba(99, 99, 99, 0)";
+      }
+  
     document.getElementById("chat_box").style.backgroundColor = "#1f1f1f";
     document.getElementById("chat_box_bottom").style.backgroundColor =
       "#1f1f1f";

@@ -11,7 +11,7 @@ import {BrowserRouter as Router,
 import Login from './Components/Pages/Login';
 import Note from './Components/Pages/Note/Note';
 import Drive from './Components/Pages/Drive/Drive';
-import Todo from './Components/Pages/Todo/Todo';
+import Task from './Components/Pages/Task/Task';
 import { useStateValue } from './Components/Pages/StateProvider';
 
 function App(){
@@ -40,8 +40,8 @@ function App(){
 					<Route path="/drive">
 					<Drive/>
 					</Route>
-					<Route path="/todo">
-					<Todo/>
+					<Route path="/task">
+					<Task/>
 					</Route>
 
 						

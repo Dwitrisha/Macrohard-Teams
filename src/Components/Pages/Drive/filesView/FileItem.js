@@ -6,7 +6,7 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 const FileItem = ({ id, caption, timestamp, fileUrl, size ,username}) => {
-    const fileDate = `${timestamp?.toDate().getDate()} ${monthNames[timestamp?.toDate().getMonth() + 1]} ${timestamp?.toDate().getFullYear()}`
+    const fileDate = `${timestamp?.toDate().getDate()} ${monthNames[timestamp?.toDate().getMonth()]} ${timestamp?.toDate().getFullYear()}`
 
     const getReadableFileSizeString = (fileSizeInBytes) => {
         let i = -1;

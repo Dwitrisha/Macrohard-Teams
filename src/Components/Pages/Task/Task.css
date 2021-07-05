@@ -1,13 +1,13 @@
-#note_page{
+#task_page{
     display:flex;
   
 
 }
 
-#note-container{
+#task-container{
 flex:7.5;
 margin-left: 11vh;
 margin-top: 7vh;
-background-color: rgb(212, 158, 88);
+background-color: rgb(173, 88, 212);
 height: 93vh;
 }

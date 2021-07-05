@@ -12,9 +12,10 @@ import { useParams } from "react-router-dom";
 import firebase from "firebase";
 import { useStateValue } from "../Pages/StateProvider";
 import db, { storage } from "./firebase";
-import CloseIcon from '@material-ui/icons/Close';
+import CloseIcon from "@material-ui/icons/Close";
 import "emoji-mart/css/emoji-mart.css";
 import { Picker } from "emoji-mart";
+import VideoCallIcon from "@material-ui/icons/VideoCall";
 
 function showEmoji() {
   var x = document.getElementById("Emoji_List");
@@ -30,8 +31,8 @@ function showUpload() {
     document.getElementById("file_upload").style.display = "block";
   else document.getElementById("file_upload").style.display = "none";
 }
-function closeUpload(){
-  document.getElementById("file_upload").style.display="none";
+function closeUpload() {
+  document.getElementById("file_upload").style.display = "none";
 }
 function Chat() {
   const [file, setFile] = useState(null);
@@ -40,7 +41,6 @@ function Chat() {
   const [input, setInput] = useState("");
   //Selecting emoji from emoji picker
   const [chosenEmoji, setChosenEmoji] = useState(null);
-
 
   const { roomId } = useParams();
 
@@ -79,7 +79,6 @@ function Chat() {
     if (e.target.files[0]) {
       setFile(e.target.files[0]);
     }
-  
   };
 
   const handleUpload = () => {
@@ -106,13 +105,15 @@ function Chat() {
           .child(file.name)
           .getDownloadURL()
           .then((url) => {
-          
-            db.collection("rooms").doc(roomId).collection("messages").add({
-              message: "File Uploaded: "+url,
-              name: user.displayName,
-              photo: user.photoURL,
-              timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            });
+            db.collection("rooms")
+              .doc(roomId)
+              .collection("messages")
+              .add({
+                message: "File Uploaded: " + url,
+                name: user.displayName,
+                photo: user.photoURL,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+              });
             setInput("");
 
             //post file inside db
@@ -129,6 +130,30 @@ function Chat() {
     );
   };
 
+  //starting a new meeting within chat
+  function join() {
+    var url = Math.random().toString(36).substring(2, 7);
+    //post meeting inside db
+    db.collection("meetingLink").add({
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      meetingUrl: url,
+      fullUrl: url + " " +roomId,
+      roomId: roomId,
+    });
+
+    window.open(`/${url}`, "_blank");
+    db.collection("rooms")
+      .doc(roomId)
+      .collection("messages")
+      .add({
+        message: "Meeting Link: https://macrohard-teams.web.app/" + url,
+        name: user.displayName,
+        photo: user.photoURL,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+    setInput("");
+  }
+
   return (
     <div id="chat_page">
       <Header />
@@ -138,31 +163,43 @@ function Chat() {
           <ConversationBar />
         </div>
 
-        <div id="message_heading">{roomName}</div>
+        <div id="message_heading">
+          {roomName}
+          <VideoCallIcon
+            id="video_call_icon"
+            style={{ fontSize: 30 }}
+            onClick={join}
+          />
+        </div>
         <div id="chat_box">
           <div className="chat_box_wrapper">
             <div className="chat_box_top">
               <div id="file_upload" style={{ display: "none" }}>
-               
-                <progress value={progress} max="100" />  <CloseIcon id="progress_close" style={{marginLeft:"2rem"}} onClick={closeUpload}/>
-               <br/>
-                <input style={{marginLeft:"5rem"}} type="file" onChange={handleChange} />
+                <progress value={progress} max="100" />{" "}
+                <CloseIcon
+                  id="progress_close"
+                  style={{ marginLeft: "2rem" }}
+                  onClick={closeUpload}
+                />
                 <br />
-                <Button id="upload_button" onClick={handleUpload}>Upload</Button>
-              
+                <input
+                  style={{ marginLeft: "5rem" }}
+                  type="file"
+                  onChange={handleChange}
+                />
+                <br />
+                <Button id="upload_button" onClick={handleUpload}>
+                  Upload
+                </Button>
               </div>
 
               <div id="Emoji_List" style={{ display: "none" }}>
-              <Picker onSelect={emoji => alert("Hey:"+emoji.native)} />
-             
+                <Picker onSelect={(emoji) => alert("Hey:" + emoji.native)} />
               </div>
               <div className="chat_box_background">
-            
-                 
                 <div id="chat_box_bottom">
                   <div style={{ paddingLeft: "8vw" }}>
                     <div id="text_container">
-                     
                       <Input
                         onChange={(e) => setInput(e.target.value)}
                         id="chat_message_input"

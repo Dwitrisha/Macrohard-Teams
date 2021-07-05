@@ -38,7 +38,7 @@ function Conversation({ id, name, addNewChat }) {
 
   return !addNewChat ? (
     <Link to={`/rooms/${id}`}>
-      <div id="conversation">
+      <div className="conversation" id="conversation">
         <img
           className="conversation_img"
           src={`https://avatars.dicebear.com/api/identicon/${seed}.svg`}

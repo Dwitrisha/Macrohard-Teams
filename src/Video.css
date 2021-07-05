@@ -215,8 +215,8 @@ body {
 #transcription-container{
   position:fixed;
   margin-left: 28%;
-  z-index: 100000;
-  margin-top: 62vh;
+  z-index: 200000;
+  margin-top: 61vh;
  
 }
 

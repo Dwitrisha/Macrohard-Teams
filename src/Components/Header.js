@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./css/Header.css";
 import { Button } from "@material-ui/core";
 import { Input } from "@material-ui/core";
@@ -10,49 +10,51 @@ import Dark from "./img/Dark.png";
 import Light from "./img/Light.png";
 import DarkMode from "./Pages/Modes/DarkMode";
 import LightMode from "./Pages/Modes/LightMode";
-import { useStateValue } from './Pages/StateProvider';
-
-
+import { useStateValue } from "./Pages/StateProvider";
 
 function Show_Options() {
   if (document.getElementById("settings_menu").style.display === "none")
     document.getElementById("settings_menu").style.display = "block";
   else document.getElementById("settings_menu").style.display = "none";
 }
+
+function search_package() {
+  let input = document.getElementById("searchbar").value;
+  input = input.toLowerCase();
+
+  if(document.getElementById("conversation")!=null)
+  {
+  let x = document.getElementsByClassName("conversation");
+  let y=document.getElementsByClassName("chat_messages_wrapper")
+
+
+  for (var i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.display = "none";
+    } else {
+      x[i].style.display = "list-item";
+    }
+  }
+}
+}
+
 function Header() {
-
-  
-
-  const [item, setItem] = useState("");
-  const [{user},dispatch]=useStateValue();
-
-  const Search = (e) => {
-    e.preventDefault();
-   alert(item)
-   
-    setItem("");
-  };
-
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div id="header">
       <div id="headergrid">
         <div id="teams_heading">
-          <DashboardIcon style={{ fontSize: 20}} /> Macrohard Teams
+          <DashboardIcon style={{ fontSize: 20 }} /> Macrohard Teams
         </div>
 
-   
-        <Input id="searchbar" placeholder="Search"   value={item}
-                        onChange={(e) => setItem(e.target.value)}/>
+        <Input id="searchbar" placeholder="Search" onKeyUp={search_package}/>
         <SearchIcon
-          id="searchicon" onClick={Search}
+          id="searchicon"
           style={{ color: "#818183", fontSize: 22, marginTop: 5 }}
         />
-    
+
         <div id="header_right">
-          <img
-            id="user_image"
-            src={user?.photoURL}
-          />
+          <img id="user_image" src={user?.photoURL} />
           <MoreHorizIcon
             style={{ color: "white", fontSize: 25 }}
             id="settings_icon"

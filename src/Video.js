@@ -27,6 +27,9 @@ import Transcription from "./Transcription";
 import CloseIcon from "@material-ui/icons/Close";
 import { ReactMediaRecorder } from "react-media-recorder";
 import { useReactMediaRecorder } from "react-media-recorder";
+import db from "./Components/Pages/firebase";
+import { useStateValue } from "./Components/Pages/StateProvider";
+import firebase from "firebase";
 init("user_1Zs7LFbYpLUQXCXOnytsf");
 
 const server_url =
@@ -45,21 +48,44 @@ var socket = null;
 var socketId = null;
 var elms = 0;
 
-//Recording
+//getting all video link urls
+const getAllEvents = async () => {
+ var site = window.location.href.toString();
+ 
+  var site_length=site.length;
+  for(var m=0;m<site_length;m++)
+  {
+    if(site.charAt(m)==="a")
+    {
+      var position=m;
+      var value=site.substring(m+4,m+10);
+    }
+ 
+  }
+ 
+  const query_snap = await db
+    .collection("meetingLink")
+    .where("meetingUrl", "==", value)
+    .get();
+
+  if (!query_snap.size) throw new Error("No meeting link found");
+
+
+  // Meeting Document
+  const meeting_link = query_snap.docs[0].data();
+  return meeting_link;
+};
 
 function showRecorder() {
-
-   alert("Please allow sharing to start recording.")
+  alert("Please allow sharing to start recording.");
   if (document.getElementById("recording-div").style.display === "none") {
     document.getElementById("recording-div").style.display = "block";
-   
-   
+
     const RecordView = () => {
       const { status, startRecording, stopRecording, mediaBlobUrl } =
         useReactMediaRecorder({ video: true });
     };
   } else {
-  
     document.getElementById("recording-div").style.display = "none";
   }
 }
@@ -73,13 +99,9 @@ function Close() {
   }
 }
 
-
 function CloseRecorder() {
   if (document.getElementById("recording-div") != null) {
     document.getElementById("recording-div").style.display = "none";
- 
-
-
   }
 }
 
@@ -584,8 +606,36 @@ class Video extends Component {
   handleUsername = (e) => this.setState({ username: e.target.value });
 
   sendMessage = () => {
-    socket.emit("chat-message", this.state.message, this.state.username);
-    this.setState({ message: "", sender: this.state.username });
+ 
+
+    getAllEvents().then((meetingLink) => {
+      var meeting_link_data = JSON.stringify(meetingLink);
+      var length = meeting_link_data.length;
+
+      for (var n = 0; n < length; n++) {
+        if (meeting_link_data.charAt(n) === "f") var pos = n;
+        var link = meeting_link_data.substring(pos, pos + 7);
+        if (link === "fullUrl") {
+          var roomId = meeting_link_data.substring(pos + 16, pos + 36);
+          socket.emit("chat-message", this.state.message, this.state.username);
+
+          //Enter message in normal chat db
+          db.collection("rooms")
+            .doc(roomId)
+            .collection("messages")
+            .add({
+              message: this.state.message + " ~" + this.state.username,
+              name: this.state.username,
+              photo:
+                "https://thumbs.dreamstime.com/b/video-call-online-meeting-education-webinar-support-flat-color-line-icon-vector-web-conference-symbol-sign-illustration-design-161479140.jpg",
+              timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            });
+
+          this.setState({ message: "", sender: this.state.username });
+          break;
+        }
+      }
+    });
   };
 
   copyUrl = () => {
@@ -802,7 +852,7 @@ class Video extends Component {
                       }}
                     />
 
-                    <Button id="recorder_button"  onClick={showRecorder}>
+                    <Button id="recorder_button" onClick={showRecorder}>
                       Record
                     </Button>
 
@@ -815,7 +865,10 @@ class Video extends Component {
                           stopRecording,
                           mediaBlobUrl,
                         }) => (
-                          <div style={{ position: "fixed", display:"none"}} id="recording-div">
+                          <div
+                            style={{ position: "fixed", display: "none" }}
+                            id="recording-div"
+                          >
                             <button onClick={startRecording} id="start-button">
                               Start
                             </button>
@@ -832,10 +885,10 @@ class Video extends Component {
                               style={{ border: "none" }}
                             />
                             <CloseIcon
-                          id="closerecorder_button"
-                          style={{ marginLeft: "0.5rem", fontSize: 25 }}
-                          onClick={CloseRecorder}
-                        />
+                              id="closerecorder_button"
+                              style={{ marginLeft: "0.5rem", fontSize: 25 }}
+                              onClick={CloseRecorder}
+                            />
                           </div>
                         )}
                       />
@@ -867,7 +920,7 @@ class Video extends Component {
                         type="text"
                         name="to_name"
                       />
-                      <br/>
+                      <br />
 
                       <label style={{ color: "white" }}>Email: </label>
                       <input
@@ -876,7 +929,7 @@ class Video extends Component {
                         style={{ marginLeft: "0.5rem" }}
                         name="to_email"
                       />
-   <br/>
+                      <br />
                       <label style={{ color: "white" }}>Link: </label>
                       <input
                         className="form_input"
