@@ -16,7 +16,7 @@
   8. Record screen
   9. Start a meeting or Join with URL
 
- ###  Adopt Feature Implemented :heavy_check_mark:
+ ###   Adopt Feature Implemented :heavy_check_mark:
   
 * ### <ins>Chatting</ins> ~
   1. Group Chat Rooms to allow multiple participants to chat
