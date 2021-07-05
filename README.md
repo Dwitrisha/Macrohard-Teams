@@ -16,7 +16,7 @@
   8. Record screen
   9. Start a meeting or Join with URL
 
-  #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
+ #### Adopt Feature Implemented :heavy_check_mark:
   
 * ### <ins>Chatting</ins> ~
   1. Group Chat Rooms to allow multiple participants to chat
@@ -50,6 +50,8 @@ Your solution should be a fully functional prototype with at least one mandatory
 
  ### *Credits :*~
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
+
+Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
