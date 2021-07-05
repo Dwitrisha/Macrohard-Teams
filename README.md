@@ -1,6 +1,8 @@
 ## MACROHARD TEAMS: A MICROSOFT TEAMS CLONE  
 (Built for [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
 
+ ###   Adopt Feature Implemented :heavy_check_mark:
+
  ### *Solution Functionalities :~*
  
 * ### <ins>Multi-user Video Calling + Realtime Chat</ins> ~
@@ -16,7 +18,6 @@
   8. Record screen
   9. Start a meeting or Join with URL
 
- ###   Adopt Feature Implemented :heavy_check_mark:
   
 * ### <ins>Chatting</ins> ~
   1. Group Chat Rooms to allow multiple participants to chat
