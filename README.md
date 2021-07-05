@@ -1,9 +1,9 @@
 ## MACROHARD TEAMS: A MICROSOFT TEAMS CLONE  
 (Built for [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
 
- ## *Solution Functionalities~*
-
-* ***<ins>Multi-user Video Calling + Realtime Chat</ins> -***
+ ## <ins>Solution Functionalities~</ins>
+ 
+*  ### *Multi-user Video Calling + Realtime Chat~*
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
@@ -18,19 +18,21 @@
 
   #### Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
-* ***<ins>Chatting</ins> -***
+*  ### *Chatting~*
   1. Group Chat Rooms to allow multiple participants to chat
   2. Create new rooms real-time
   3. Uploading and sending files as link easily with a click
   4. Emoji Picker to use during chatting
   
-* ***<ins>Drive for Files</ins> -***
+*  ### *Drive for Files~*
   1. Easily upload files of any format to the drive with just 2-3 clicks
   2. All the files uploaded and shown in order of time uploaded with file name, user name, size of file and date of last modification
   3. The files are presented in both grid (card) and list form
- 
-* ***<ins>Notes</ins> -***
-* ***<ins>Tasks</ins> -***
+
+
+*  ### *Notes~*
+
+*  ### *Tasks~*
   1. 
  
 ## *Tech Stack Used~*
