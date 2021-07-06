@@ -10,7 +10,7 @@
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
-  2. Live Video Transcription using **Speech-to-Text Recognition (Natural Language Processing)**
+  2. Live Video Transcription using **Speech-to-Text Recognition (Natural Language Processing)** :star: 
   3. Email participants using [EmailJS](https://www.emailjs.com/)
   4. Screen Sharing
   5. Realtime Chat              
