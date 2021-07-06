@@ -18,7 +18,12 @@
   8. Record screen
   9. Start a meeting or Join with URL
 
-  
+ #### Adopt Feature: 
+:boom: Users can create a room before hand and start a conversation before meeting
+:boom: Realtime chat within meeting is stored in the database and available in the room even after meeting is ended.
+:boom: If a room is not created beforehand a new conversation room is created as soon as a new meeting is started and all the chat is stores in it.
+:boom: A video meeting can be started from within the chat whenever needed.
+ 
 * ### <ins>Chatting</ins> ~
   1. Group Chat Rooms to allow multiple participants to chat
   2. Create new rooms real-time
