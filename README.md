@@ -19,11 +19,11 @@
   9. Start a meeting or Join with URL
 
  #### Adopt Feature: 
-:boom: Users can create a room before hand and start a conversation before meeting
-:boom: Realtime chat within meeting is stored in the database and available in the room even after meeting is ended.
-:boom: If a room is not created beforehand a new conversation room is created as soon as a new meeting is started and all the chat is stores in it.
-:boom: A video meeting can be started from within the chat whenever needed.
- 
+:boom: Users have the option to create a room to start a conversation whenever they want.\
+:boom: Start a video call feature is available both within the chat room itself and under the Call tab.\
+:boom: It is not compulsory to create a chat room from prior, a new chat room is created as soon as a meeting is started under the Call tab and if no chat room is pre-existing for it.\
+:boom: Conversations are recorded in the database before the meeting, during the meeting and after the meeting without any interruption and the realtime chat within meeting is stored in the database and available in the room even after meeting is ended.\
+
 * ### <ins>Chatting</ins> ~
   1. Group Chat Rooms to allow multiple participants to chat
   2. Create new rooms real-time
