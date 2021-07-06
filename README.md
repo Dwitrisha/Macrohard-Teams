@@ -6,7 +6,7 @@
 
  ### :rocket:*Solution Functionalities :~*
  
-* ### <ins>Multi-user Video Calling + Realtime Chat</ins> 
+ ### :large_blue_diamond: <ins>Multi-user Video Calling + Realtime Chat</ins> 
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
@@ -26,7 +26,7 @@
 :boom: Conversations are recorded in the database before the meeting, during the meeting and after the meeting without any interruption and the realtime chat within meeting is stored in the database and available in the room even after meeting is ended.
 
 
-* ### <ins>Chatting</ins> 
+ ### :large_blue_diamond: <ins>Chatting</ins> 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Create new rooms real-time
   3. Start video meeting from within chat with multiple participants
