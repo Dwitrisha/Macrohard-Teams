@@ -29,8 +29,9 @@
 * ### <ins>Chatting</ins> 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Create new rooms real-time
-  3. Uploading and sending files as link easily with a click
-  4. Emoji Picker to use during chatting
+  3. Start video meeting from within chat with multiple participants
+  4. Uploading and sending files as link easily with a click
+  5. Emoji Picker to use during chatting
   
 * ### <ins>Drive for Files</ins> 
   1. Easily upload files of any format to the drive with just 2-3 clicks
