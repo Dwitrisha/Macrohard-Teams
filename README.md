@@ -20,7 +20,6 @@
   9. Start a meeting or Join with URL
 
 ---
-**NOTE**
  ### :video_camera: Adopt Feature:
 :boom: Users have the option to create a room to start a conversation whenever they want.\
 :boom: Start a video call feature is available both within the chat room itself and under the Call tab.\
