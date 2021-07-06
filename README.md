@@ -9,7 +9,7 @@
 * ### <ins>Multi-user Video Calling + Realtime Chat</ins> 
   The Video Chat includes following functionalities:
 
-  1.  Multiple participants can join
+  1. Multiple participants can join
   2. Live Video Transcription using **Speech-to-Text Recognition (Natural Language Processing)** 
   3. Email participants using [EmailJS](https://www.emailjs.com/)
   4. Screen Sharing
