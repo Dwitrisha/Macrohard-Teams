@@ -33,15 +33,15 @@
   4. Uploading and sending files as link easily with a click
   5. Emoji Picker to use during chatting
   
-* ### <ins>Drive for Files</ins> 
+### :large_blue_diamond: <ins>Drive for Files</ins> 
   1. Easily upload files of any format to the drive with just 2-3 clicks
   2. All the files uploaded and shown in order of time uploaded with file name, user name, size of file and date of last modification
   3. The files are presented in both grid (card) and list form
 
 
-* ### <ins>Notes</ins> 
+### :large_blue_diamond: <ins>Notes</ins> 
 
-* ### <ins>Tasks</ins> 
+### :large_blue_diamond: <ins>Tasks</ins> 
   1. 
  
  ### :rocket:*Tech Stack Used :*~
