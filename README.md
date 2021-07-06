@@ -6,7 +6,7 @@
 
  ### :rocket:*Solution Functionalities :~*
  
-* ### <ins>Multi-user Video Calling + Realtime Chat</ins> ~
+* ### <ins>Multi-user Video Calling + Realtime Chat</ins> 
   The Video Chat includes following functionalities:
 
   1. Multiple participants can join
@@ -26,21 +26,21 @@
 :boom: Conversations are recorded in the database before the meeting, during the meeting and after the meeting without any interruption and the realtime chat within meeting is stored in the database and available in the room even after meeting is ended.
 
 
-* ### <ins>Chatting</ins> ~
+* ### <ins>Chatting</ins> 
   1. Group Chat Rooms to allow multiple participants to chat
   2. Create new rooms real-time
   3. Uploading and sending files as link easily with a click
   4. Emoji Picker to use during chatting
   
-* ### <ins>Drive for Files</ins> ~
+* ### <ins>Drive for Files</ins> 
   1. Easily upload files of any format to the drive with just 2-3 clicks
   2. All the files uploaded and shown in order of time uploaded with file name, user name, size of file and date of last modification
   3. The files are presented in both grid (card) and list form
 
 
-* ### <ins>Notes</ins> ~
+* ### <ins>Notes</ins> 
 
-* ### <ins>Tasks</ins> ~
+* ### <ins>Tasks</ins> 
   1. 
  
  ### :rocket:*Tech Stack Used :*~
