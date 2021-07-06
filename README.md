@@ -1,8 +1,6 @@
 ## MACROHARD TEAMS: A MICROSOFT TEAMS CLONE 
 ### :link: [https://macrohard-teams.web.app/](https://macrohard-teams.web.app/)
 
-(Built for [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
-
  ###  :star: Adopt Feature Implemented :heavy_check_mark:
 
  ### :rocket:*Solution Functionalities :~*
