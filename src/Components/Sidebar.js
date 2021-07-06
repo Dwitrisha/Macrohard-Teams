@@ -41,9 +41,6 @@ function Sidebar() {
             />
           </Link>
 
-          <Link to="/notes">
-            <SidebarOption icon_img={<EventNoteIcon />} icon_name="Notes" />
-          </Link>
 
           <Link to="/calendar">
             <SidebarOption icon_img={<TodayIcon />} icon_name="Events" />

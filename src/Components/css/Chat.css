@@ -27,8 +27,8 @@
     display: block;
     width: 100%;
     margin-top:6.8vh;
-    margin-left: 29.5vw;
-    padding-top: 0.7rem;
+    margin-left: 30vw;
+    padding-top: 0.65rem;
    padding-left: 2rem;
 
   
@@ -61,6 +61,7 @@ height:93vh;
 box-shadow: inset 9px 0px 9px -7px rgba(99, 99, 99, 0.4);
 margin-top: 6.8vh;
 margin-left: 11vh;
+overflow-y: hidden;
   
   }
 

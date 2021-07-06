@@ -13,6 +13,7 @@ import firebase from "firebase";
 import { useStateValue } from "../Pages/StateProvider";
 import db, { storage } from "./firebase";
 import CloseIcon from "@material-ui/icons/Close";
+import { Scrollbars } from 'react-custom-scrollbars';
 import "emoji-mart/css/emoji-mart.css";
 import { Picker } from "emoji-mart";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
@@ -160,7 +161,11 @@ function Chat() {
       <div className="messenger">
         <Sidebar />
         <div id="chat_menu">
+          <Scrollbars  autoHide
+        autoHideTimeout={1000}
+        autoHideDuration={200}>
           <ConversationBar />
+          </Scrollbars>
         </div>
 
         <div id="message_heading">

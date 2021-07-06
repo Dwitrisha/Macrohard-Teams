@@ -606,7 +606,6 @@ class Video extends Component {
   handleUsername = (e) => this.setState({ username: e.target.value });
 
   sendMessage = () => {
- 
 
     getAllEvents().then((meetingLink) => {
       var meeting_link_data = JSON.stringify(meetingLink);
@@ -624,10 +623,10 @@ class Video extends Component {
             .doc(roomId)
             .collection("messages")
             .add({
-              message: this.state.message + " ~" + this.state.username,
+              message: this.state.message + " ~" + this.state.username+" in meeting",
               name: this.state.username,
               photo:
-                "https://thumbs.dreamstime.com/b/video-call-online-meeting-education-webinar-support-flat-color-line-icon-vector-web-conference-symbol-sign-illustration-design-161479140.jpg",
+                "https://cdn.pixabay.com/photo/2017/06/10/07/21/chat-2389223_1280.png",
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             });
 

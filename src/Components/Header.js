@@ -18,7 +18,7 @@ function Show_Options() {
   else document.getElementById("settings_menu").style.display = "none";
 }
 
-function search_package() {
+function search_bar() {
   let input = document.getElementById("searchbar").value;
   input = input.toLowerCase();
 
@@ -47,7 +47,7 @@ function Header() {
           <DashboardIcon style={{ fontSize: 20 }} /> Macrohard Teams
         </div>
 
-        <Input id="searchbar" placeholder="Search" onKeyUp={search_package}/>
+        <Input id="searchbar" placeholder="Search" onKeyUp={search_bar}/>
         <SearchIcon
           id="searchicon"
           style={{ color: "#818183", fontSize: 22, marginTop: 5 }}

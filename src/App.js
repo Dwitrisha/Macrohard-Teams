@@ -9,7 +9,6 @@ import {BrowserRouter as Router,
   Switch, 
   Route,Link} from  "react-router-dom";
 import Login from './Components/Pages/Login';
-import Note from './Components/Pages/Note/Note';
 import Drive from './Components/Pages/Drive/Drive';
 import Task from './Components/Pages/Task/Task';
 import { useStateValue } from './Components/Pages/StateProvider';
@@ -42,11 +41,6 @@ function App(){
 					</Route>
 					<Route path="/task">
 					<Task/>
-					</Route>
-
-						
-					<Route path="/notes">
-					<Note/>
 					</Route>
 
 					<Route path="/home" component={Home} />
