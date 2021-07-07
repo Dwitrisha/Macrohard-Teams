@@ -64,6 +64,8 @@ Video Meeting component was open-sourced and re-purposed from [Video Meeting](ht
 
 Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
 
+Todo App reference: [react-todo-app](https://github.com/IonicaBizau/react-todo-app)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
