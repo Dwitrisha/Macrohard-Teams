@@ -49,7 +49,7 @@
 ### :large_blue_diamond: <ins>Scheduler</ins> 
 1. 
  
- 
+  ### :rocket:*Application Architecture :*~
  ![Application Architecture](./Architecture.jpg)
  
  ### :rocket:*Tech Stack Used :*~
