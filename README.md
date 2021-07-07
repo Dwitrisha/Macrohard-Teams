@@ -50,6 +50,8 @@
 1. 
  
  
+ ![Architecture](./Architecture.jpg)
+ 
  ### :rocket:*Tech Stack Used :*~
 - React.js
 - Node.js
