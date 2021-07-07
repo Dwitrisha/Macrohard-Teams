@@ -41,7 +41,10 @@
   3. The files are presented in both grid (card) and list form
 
 ### :large_blue_diamond: <ins>Tasks</ins> 
-  1. 
+:heavy_check_mark: Full CRUD Functionality(Create, Read, Update & Delete)
+1. Add new tasks to database
+2. Edit/Update the tasks in database
+3. Delete tasks from database
  
  ### :rocket:*Tech Stack Used :*~
 - React.js
