@@ -40,9 +40,6 @@
   2. All the files uploaded and shown in order of time uploaded with file name, user name, size of file and date of last modification
   3. The files are presented in both grid (card) and list form
 
-
-### :large_blue_diamond: <ins>Notes</ins> 
-
 ### :large_blue_diamond: <ins>Tasks</ins> 
   1. 
  
