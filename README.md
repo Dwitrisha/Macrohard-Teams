@@ -45,6 +45,10 @@
 1. Add new tasks to database
 2. Edit/Update the tasks in database
 3. Delete tasks from database
+
+### :large_blue_diamond: <ins>Scheduler</ins> 
+1. 
+ 
  
  ### :rocket:*Tech Stack Used :*~
 - React.js
