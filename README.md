@@ -72,7 +72,7 @@ Video chat functionalities were implemented using [WebRTC API](https://webrtc.or
 
 Todo App reference: [react-firebase-materialui-todo-app](https://github.com/ipsjolly/react-firebase-materialui-todo-app)
 
-Calendar using [react_google_calendar](https://www.npmjs.com/package/react_google_calendar)
+Calendar using [@ericz1803/react-google-calendar](https://www.npmjs.com/package/@ericz1803/react-google-calendar)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
