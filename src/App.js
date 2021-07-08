@@ -10,7 +10,7 @@ import {BrowserRouter as Router,
   Route,Link} from  "react-router-dom";
 import Login from './Components/Pages/Login';
 import Drive from './Components/Pages/Drive/Drive';
-import Task from './Components/Pages/Task/Task';
+import Todo from './Components/Pages/Task/Todo';
 import { useStateValue } from './Components/Pages/StateProvider';
 
 function App(){
@@ -40,7 +40,7 @@ function App(){
 					<Drive/>
 					</Route>
 					<Route path="/task">
-					<Task/>
+					<Todo/>
 					</Route>
 
 					<Route path="/home" component={Home} />

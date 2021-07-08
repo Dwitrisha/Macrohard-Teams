@@ -25,14 +25,14 @@ function search_bar() {
   if(document.getElementById("conversation")!=null)
   {
   let x = document.getElementsByClassName("conversation");
-  let y=document.getElementsByClassName("chat_messages_wrapper")
-
 
   for (var i = 0; i < x.length; i++) {
     if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.visibility = "hidden";
       x[i].style.display = "none";
     } else {
-      x[i].style.display = "list-item";
+      x[i].style.visibility  = "visible";
+      x[i].style.display = "block";
     }
   }
 }
@@ -50,7 +50,7 @@ function Header() {
         <Input id="searchbar" placeholder="Search" onKeyUp={search_bar}/>
         <SearchIcon
           id="searchicon"
-          style={{ color: "#818183", fontSize: 22, marginTop: 5 }}
+          style={{ color: "#818183", fontSize: 26, marginTop: 3 }}
         />
 
         <div id="header_right">

@@ -18,6 +18,8 @@ class Home extends Component {
     };
   }
 
+
+
   handleChange = (e) => this.setState({ url: e.target.value });
 
   join = () => {
@@ -28,7 +30,7 @@ class Home extends Component {
   };
 
   render() {
-
+ 
     function start() {
       var url = Math.random().toString(36).substring(2, 7);
       window.open(`/${url}`,'_blank');

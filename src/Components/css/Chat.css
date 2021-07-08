@@ -188,8 +188,7 @@ color:#8c6de4;
 }
 #Emoji_List{
   position: fixed;
-  margin-top: 1rem;
-  margin-left: 6rem;
+  margin-left: 7rem;
   z-index: 100000;
 }
 

@@ -17,6 +17,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import "emoji-mart/css/emoji-mart.css";
 import { Picker } from "emoji-mart";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
+import emoji from "emoji-mart/dist-es/components/emoji/emoji";
 
 function showEmoji() {
   var x = document.getElementById("Emoji_List");
@@ -26,6 +27,7 @@ function showEmoji() {
     x.style.display = "none";
   }
 }
+
 
 function showUpload() {
   if (document.getElementById("file_upload").style.display === "none")
@@ -75,6 +77,16 @@ function Chat() {
     });
     setInput("");
   };
+
+const clickEmoji=(e)=>{
+    db.collection("rooms").doc(roomId).collection("messages").add({
+      message:e,
+      name: user.displayName,
+      photo: user.photoURL,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+  }
+  
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
@@ -199,7 +211,7 @@ function Chat() {
               </div>
 
               <div id="Emoji_List" style={{ display: "none" }}>
-                <Picker onSelect={(emoji) => alert("Hey:" + emoji.native)} />
+                <Picker onSelect={(emoji) => clickEmoji(emoji.native)} />
               </div>
               <div className="chat_box_background">
                 <div id="chat_box_bottom">
@@ -209,6 +221,7 @@ function Chat() {
                         onChange={(e) => setInput(e.target.value)}
                         id="chat_message_input"
                         placeholder="Type a new message"
+                        value={input}
                       />
                     </div>
                   </div>

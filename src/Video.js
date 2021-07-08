@@ -50,26 +50,18 @@ var elms = 0;
 
 //getting all video link urls
 const getAllEvents = async () => {
- var site = window.location.href.toString();
- 
-  var site_length=site.length;
-  for(var m=0;m<site_length;m++)
-  {
-    if(site.charAt(m)==="a")
-    {
-      var position=m;
-      var value=site.substring(m+4,m+10);
-    }
- 
-  }
- 
+  var site = window.location.href.toString();
+  //http://localhost:3000/
+  var site_length = site.length;
+
+  var value = site.substring(site_length - 5, site_length);
+
   const query_snap = await db
     .collection("meetingLink")
     .where("meetingUrl", "==", value)
     .get();
 
   if (!query_snap.size) throw new Error("No meeting link found");
-
 
   // Meeting Document
   const meeting_link = query_snap.docs[0].data();
@@ -89,6 +81,7 @@ function showRecorder() {
     document.getElementById("recording-div").style.display = "none";
   }
 }
+
 
 //Mailing
 
@@ -606,7 +599,6 @@ class Video extends Component {
   handleUsername = (e) => this.setState({ username: e.target.value });
 
   sendMessage = () => {
-
     getAllEvents().then((meetingLink) => {
       var meeting_link_data = JSON.stringify(meetingLink);
       var length = meeting_link_data.length;
@@ -623,7 +615,8 @@ class Video extends Component {
             .doc(roomId)
             .collection("messages")
             .add({
-              message: this.state.message + " ~" + this.state.username+" in meeting",
+              message:
+                this.state.message + " ~" + this.state.username + " in meeting",
               name: this.state.username,
               photo:
                 "https://cdn.pixabay.com/photo/2017/06/10/07/21/chat-2389223_1280.png",
@@ -868,7 +861,10 @@ class Video extends Component {
                             style={{ position: "fixed", display: "none" }}
                             id="recording-div"
                           >
-                            <button onClick={startRecording} id="start-button">
+                            <button
+                              onClick={startRecording}
+                              id="start-button"
+                            >
                               Start
                             </button>
 
