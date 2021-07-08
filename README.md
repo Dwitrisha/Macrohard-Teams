@@ -46,7 +46,7 @@
 2. Edit/Update the tasks in database
 3. Delete tasks from database
 
-### :large_blue_diamond: <ins>Scheduler</ins> 
+### :large_blue_diamond: <ins>Calendar</ins> 
 1. 
  
   ### :rocket:*Application Architecture :*~
@@ -72,7 +72,7 @@ Video chat functionalities were implemented using [WebRTC API](https://webrtc.or
 
 Todo App reference: [react-firebase-materialui-todo-app](https://github.com/ipsjolly/react-firebase-materialui-todo-app)
 
-Scheduler using [react_google_calendar](https://www.npmjs.com/package/react_google_calendar)
+Calendar using [react_google_calendar](https://www.npmjs.com/package/react_google_calendar)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
