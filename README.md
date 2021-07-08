@@ -68,9 +68,11 @@ Your solution should be a fully functional prototype with at least one mandatory
  ### :rocket:*Credits :*~
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
 
-Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/).
+Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/)
 
 Todo App reference: [react-firebase-materialui-todo-app](https://github.com/ipsjolly/react-firebase-materialui-todo-app)
+
+Scheduler using [react_google_calendar](https://www.npmjs.com/package/react_google_calendar)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
