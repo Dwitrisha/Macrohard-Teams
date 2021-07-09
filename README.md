@@ -46,8 +46,11 @@
 2. Edit/Update the tasks in database
 3. Delete tasks from database
 
-### :large_blue_diamond: <ins>Calendar</ins> 
-1. 
+### :large_blue_diamond: <ins>Schedule</ins> 
+1. Add Events using Datepicker, then events are arranged in order of descendance.
+2. Delete the events as required.
+3. Events are shown in card form in grid view. We can view full details on clicking view.
+4. Organizer name added automatically.
  
   ### :rocket:*Application Architecture :*~
  ![Application Architecture](./Architecture.jpg)
@@ -71,8 +74,6 @@ Video Meeting component was open-sourced and re-purposed from [Video Meeting](ht
 Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/)
 
 Todo App reference: [react-firebase-materialui-todo-app](https://github.com/ipsjolly/react-firebase-materialui-todo-app)
-
-Calendar using [@ericz1803/react-google-calendar](https://www.npmjs.com/package/@ericz1803/react-google-calendar)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
