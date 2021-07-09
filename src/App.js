@@ -32,7 +32,7 @@ function App(){
 					<Chat/>
 					</Route>
 
-					<Route path="/calendar">
+					<Route path="/schedule">
 					<Calendar/>
 					</Route>
 					

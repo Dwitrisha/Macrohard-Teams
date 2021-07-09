@@ -1,46 +1,107 @@
-import React from "react";
-import Scheduler from "./Scheduler/Scheduler";
+import React, { useState, useEffect } from "react";
+import Event from "./Scheduler/Event";
+import db from "../Pages/firebase";
+import { useParams } from "react-router-dom";
+import Header from "../Header";
 import Sidebar from "../Sidebar";
 import "../css/Calendar.css";
-import Header from "../Header";
-import SchedulerForm from "./Scheduler/SchedulerForm";
-import { Button } from "@material-ui/core";
+import EventBox from "./Scheduler/EventBox";
+import { Scrollbars } from "react-custom-scrollbars";
+import AddIcon from "@material-ui/icons/Add";
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
-function addEvent(){
-if(document.getElementById("event_form").style.display==="none")
-document.getElementById("event_form").style.display="block"
-else
-document.getElementById("event_form").style.display="none"
+function ShowEventForm() {
+  if (document.getElementById("event_add_form").style.display === "none")
+    document.getElementById("event_add_form").style.display = "block";
+  else document.getElementById("event_add_form").style.display = "none";
 }
+
+
+function CloseEventForm() {
+  document.getElementById("event-show-form").style.display = "none";
+  }
+
 function Calendar() {
-  const data = [
-    {
-      start_date: "2020-06-10 6:00",
-      end_date: "2020-06-10 8:00",
-      text: "Event 1",
-      id: 1,
-    },
-    {
-      start_date: "2020-06-13 10:00",
-      end_date: "2020-06-13 18:00",
-      text: "Event 2",
-      id: 2,
-    },
-  ];
+  const { eventId } = useParams();
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    db.collection("events")
+      .orderBy("date", "asc")
+      .onSnapshot((snapshot) => {
+        setEvents(
+          snapshot.docs.map((doc) => {
+            return {
+              id: doc.id,
+              date: doc.data().date,
+              start: doc.data().start,
+              end: doc.data().end,
+              details: doc.data().details,
+              organizer: doc.data().organizer,
+            };
+          })
+        );
+      });
+  }, []);
 
   return (
-    <div>
+    <div id="scheduler-page">
       <Header />
-      <div id="calendar_page">
-        <Sidebar />
-        <div id="scheduler-container" className="scheduler-container">
-          <div id="add_event" onClick={addEvent}>Add Event</div>
-          <div id ="event_form" style={{display:"none"}}>
-          <SchedulerForm/>
+      <Sidebar />
+
+      <div id="scheduler-container">
+        <div id="add-button" onClick={ShowEventForm}>
+          <AddIcon style={{ color: "white" }} fontSize="large" />
+          Add Event
+        </div>
+
+        <div id="event_add_form" style={{ display: "none" }}>
+          <Event />
+        </div>
+
+        <div className="event_boxes" id="event_boxes">
+          {events.map((event) => (
+            <EventBox
+              id={event.id}
+              date={event.date}
+              start={event.start}
+              end={event.end}
+              details={event.details}
+              organizer={event.organizer}
+            />
+          ))}
+        </div>
+        <h4>Form Details:</h4>
+       
+        <div id="event-show-form" style={{ display: "none" }}>
+        <HighlightOffIcon id="close_form_icon" style={{marginLeft:"90%"}} onClick={CloseEventForm}/>
+          <div id="form-grid">
+            <div>
+              <label className="form_label">Date:</label>
+              <br/>
+              <input className="form_input" id="event-show-date" readOnly />
+            </div>
+            <div>
+              <label className="form_label">Slot:</label>
+              <br/>
+              <input className="form_input" id="event-show-time" readOnly />
+            </div>
+            <div>
+              <label className="form_label">Organizer:</label>
+              <br/>
+              <input
+                className="form_input"
+                id="event-show-organizer"
+                readOnly
+              />
+            </div>
+
           </div>
        
-          <Scheduler events={data} />
+          <h3 className="form_label">Details:</h3>
+          <textarea className="form_input" style={{width:"92%",height:"10vh"}} id="event-show-details" readOnly />
         </div>
+        <div id="note">Click on an event to view!</div>
       </div>
     </div>
   );

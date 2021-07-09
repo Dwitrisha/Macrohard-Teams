@@ -122,7 +122,7 @@ const clickEmoji=(e)=>{
               .doc(roomId)
               .collection("messages")
               .add({
-                message: "File Uploaded: " + url,
+                message: "File Uploaded: "+url,
                 name: user.displayName,
                 photo: user.photoURL,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -184,7 +184,7 @@ const clickEmoji=(e)=>{
           {roomName}
           <VideoCallIcon
             id="video_call_icon"
-            style={{ fontSize: 30 }}
+            style={{ fontSize: 30 ,marginLeft:"1rem"}}
             onClick={join}
           />
         </div>

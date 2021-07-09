@@ -18,24 +18,37 @@ function Show_Options() {
   else document.getElementById("settings_menu").style.display = "none";
 }
 
+function showLogout(){
+ if(document.getElementById("logout-div").style.display==="none") 
+ document.getElementById("logout-div").style.display="block";
+ else
+ document.getElementById("logout-div").style.display="none";
+}
+
+function Logout(){
+  window.location.replace("https://macrohard-teams.web.app/");
+}
+
 function search_bar() {
   let input = document.getElementById("searchbar").value;
   input = input.toLowerCase();
 
-  if(document.getElementById("conversation")!=null)
-  {
-  let x = document.getElementsByClassName("conversation");
+  if (document.getElementById("conversation") != null) {
+    let x = document.getElementsByClassName("conversation");
 
-  for (var i = 0; i < x.length; i++) {
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-      x[i].style.visibility = "hidden";
-      x[i].style.display = "none";
-    } else {
-      x[i].style.visibility  = "visible";
-      x[i].style.display = "block";
+    for (var i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.visibility = "hidden";
+        x[i].style.height = "0rem";
+      } else {
+        x[i].style.visibility = "visible";
+        x[i].style.height = "4rem";
+     
+      }
     }
   }
-}
+
+  
 }
 
 function Header() {
@@ -47,20 +60,21 @@ function Header() {
           <DashboardIcon style={{ fontSize: 20 }} /> Macrohard Teams
         </div>
 
-        <Input id="searchbar" placeholder="Search" onKeyUp={search_bar}/>
+        <Input id="searchbar" placeholder="Search" onKeyUp={search_bar} />
         <SearchIcon
           id="searchicon"
           style={{ color: "#818183", fontSize: 26, marginTop: 3 }}
         />
 
         <div id="header_right">
-          <img id="user_image" src={user?.photoURL} />
+          <img id="user_image" src={user?.photoURL} onClick={showLogout}/>
           <MoreHorizIcon
             style={{ color: "white", fontSize: 25 }}
             id="settings_icon"
             onClick={Show_Options}
           />
         </div>
+      
         <div id="settings_menu">
           <h3 id="theme_heading">Themes</h3>
           <img className="settings_menu_img" src={Dark} onClick={DarkMode} />
@@ -71,6 +85,9 @@ function Header() {
           </p>
         </div>
       </div>
+      <div id="logout-div" style={{display:"none"}}>
+          <Button onClick={Logout}>Logout</Button>
+        </div>
     </div>
   );
 }

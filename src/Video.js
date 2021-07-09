@@ -850,6 +850,7 @@ class Video extends Component {
 
                     <div id="recorder">
                       <ReactMediaRecorder
+                    
                         screen
                         render={({
                           status,

@@ -12,7 +12,7 @@ import ConversationBar from "./Pages/Conversation/ConversationBar";
 import { Link } from "react-router-dom";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import ListAltIcon from "@material-ui/icons/ListAlt";
-import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
+import CreateNewFolderIcon from "@material-ui/icons/CreateNewFolder";
 
 function Sidebar() {
   return (
@@ -34,16 +34,12 @@ function Sidebar() {
             />
           </Link>
 
-          <Link to="/task">
-            <SidebarOption
-              icon_img={<ListAltIcon/>}
-              icon_name="Task"
-            />
+          <Link to="/schedule">
+            <SidebarOption icon_img={<TodayIcon />} icon_name="Events" />
           </Link>
 
-
-          <Link to="/calendar">
-            <SidebarOption icon_img={<TodayIcon />} icon_name="Events" />
+          <Link to="/task">
+            <SidebarOption icon_img={<ListAltIcon />} icon_name="Task" />
           </Link>
         </div>
       </div>
