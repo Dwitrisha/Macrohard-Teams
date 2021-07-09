@@ -46,7 +46,7 @@
 2. Edit/Update the tasks in database
 3. Delete tasks from database
 
-### :large_blue_diamond: <ins>Schedule</ins> 
+### :large_blue_diamond: <ins>Events</ins> 
 1. Add Events using Datepicker, then events are arranged in order of descendance.
 2. Delete the events as required.
 3. Events are shown in card form in grid view. We can view full details on clicking view.
