@@ -5,7 +5,7 @@
 
 ### :key: <ins>Login Instructions:</ins>
 Please use a Gmail account for Google authentication. Any Gmail account can be used to login. Incase you do not wish to use you personal account, the following Gmail accounts can be used for Google authentication:
-#### - Email: demoengage1@gmail.com, demoengage2@gmail.com, demoengage2@gmail.com
+#### - Email: demoengage1@gmail.com, demoengage2@gmail.com, demoengage3@gmail.com
 #### - Password for all accounts: engage2021$
 
 
@@ -22,7 +22,7 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
   5. Realtime Chat              
   6. Audio mute/unmute
   7. Video on/off
-  8. Record screen
+  8. Record screen(in development)
   9. Start a meeting or Join with URL
 
 ---
