@@ -58,7 +58,7 @@ Password for all accounts: engage2021$
 3. Events are shown in card form in grid view. We can view full details on clicking view.
 4. Organizer name added automatically.
  
-  ### :rocket:<ins>*Application Architecture</ins>:*~
+  ## :rocket:<ins>*Application Architecture</ins>:*~
  ![Application Architecture](./Architecture.jpg)
  
  ## :rocket:<ins>*Tech Stack Used</ins> :*~
