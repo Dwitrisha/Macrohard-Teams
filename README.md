@@ -1,6 +1,9 @@
 ## MACROHARD TEAMS: A MICROSOFT TEAMS CLONE 
 #### :link: [https://macrohard-teams.web.app/](https://macrohard-teams.web.app/) - (Built for [Microsoft Engage 2021 Challenge](https://microsoft.acehacker.com/engage2021/?mc_cid=a82d11f2ad&mc_eid=89874c26af) )
 
+For demo please use a Gmail account for Google authentication.The following Gmail account can be used for Google authentication:
+Email: demoengage1@gmail.com
+Password: engage2021$
 
  ####  :star: Adopt Feature Implemented :heavy_check_mark:
 
