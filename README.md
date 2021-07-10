@@ -75,6 +75,8 @@ Video chat functionalities were implemented using [WebRTC API](https://webrtc.or
 
 Todo App reference: [react-firebase-materialui-todo-app](https://github.com/ipsjolly/react-firebase-materialui-todo-app)
 
+Discussed project ideation with [Ananya Thapliyal](https://github.com/AnanyaThapliyal2303)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
