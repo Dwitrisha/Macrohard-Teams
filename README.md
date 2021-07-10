@@ -3,7 +3,7 @@
 
  ###  :star: Adopt Feature Implemented :heavy_check_mark:
 
-### :key:Login Instructions:
+### :key: <ins>Login Instructions:</ins>
 Please use a Gmail account for Google authentication. Any Gmail account can be used to login. Incase you do not wish to use you personal account, the following Gmail accounts can be used for Google authentication:\
 #### - Email: demoengage1@gmail.com, demoengage2@gmail.com, demoengage2@gmail.com
 #### - Password for all accounts: engage2021$
