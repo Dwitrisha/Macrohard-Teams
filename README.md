@@ -10,7 +10,7 @@ Password for all accounts: engage2021$
 
 
 
- ### :rocket:*Solution Functionalities :~*
+ ## :rocket:<ins>*Solution Functionalities</ins> :~*
  
  ### :large_blue_diamond: <ins>Multi-user Video Calling + Realtime Chat</ins> 
   The Video Chat includes following functionalities:
