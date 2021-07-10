@@ -61,7 +61,7 @@ Password for all accounts: engage2021$
   ### :rocket:<ins>*Application Architecture</ins>:*~
  ![Application Architecture](./Architecture.jpg)
  
- ### :rocket:*Tech Stack Used :*~
+ ## :rocket:<ins>*Tech Stack Used</ins> :*~
 - React.js
 - Node.js
 - JavaScript
@@ -71,10 +71,10 @@ Password for all accounts: engage2021$
 - CSS
 - Firebase
 
- ### :rocket:<ins>*Details</ins>:*~
+ ## :rocket:<ins>*Details</ins>:*~
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
- ### :rocket:<ins>*Credits</ins> :*~
+ ## :rocket:<ins>*Credits</ins> :*~
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
 
 Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/)
