@@ -2,10 +2,10 @@
     width: 100%;
 }
 
-.fileView__row{
-    height: 250px;
-    display: flex;
-    align-items: center;
+#files-card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 2rem;
 }
 
 .fileView__titles{
@@ -24,4 +24,10 @@
 
 .fileView__titles--right{
     display: flex;
+}
+
+#files-list{
+    height:70vh;
+    width:93vw;
+    overflow-y: scroll;
 }

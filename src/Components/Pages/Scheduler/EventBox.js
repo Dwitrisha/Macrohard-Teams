@@ -32,14 +32,14 @@ function EventBox(props) {
     <div>
       <div id="event_box">
         <div id="event_title">
-          <div id="event_name">{props.details}</div>
+          <div id="event_name">{props.name}</div>
           <DeleteIcon id="delete_icon" onClick={() => deleteEvent(props.id)} />
         </div>
 
         <div id="event_date">{props.date}</div>
 
         <button id="view_button" onClick={() => showEventDetails(props.id)}>
-          View Event
+          View
         </button>
       </div>
     

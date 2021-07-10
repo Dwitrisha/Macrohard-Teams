@@ -18,7 +18,7 @@ function Drive() {
               <div id="drive-files">
               <FilesView />
               </div>
-              <sideIcons />
+            
             </div>
             </div>
         

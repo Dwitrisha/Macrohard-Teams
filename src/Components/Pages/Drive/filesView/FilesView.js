@@ -32,19 +32,25 @@ const FilesView = () => {
                     <p>File size</p>
                 </div>
             </div>
+            <div id="files-list">
             {
+                
                 files.map(({ id, item }) => (
                     <FileItem id={id} caption={item.caption} timestamp={item.timestamp} username={item.username} fileUrl={item.fileUrl} size={item.size} />
                 ))
             }
-
-<div className="fileView__row">
+        
+  <div id="files-card-grid">
                 {
-                    files.slice(0, 5).map(({ id, item }) => (
+                    files.map(({ id, item }) => (
+
+                      
                         <FileCard name={item.caption} fileUrl={item.fileUrl} username={item.username}/>
+                     
                     ))
 
                 }
+            </div>
             </div>
         </div>
     )

@@ -114,32 +114,37 @@ function Todo() {
             </Button>
           </form>
           <center>
-            <List style={{ width: "45vw" }} dense={true}>
-              {todos.map((todo) => (
-                <ListItem id="todo-box" key={todo.id}>
-                  <ListItemText primary={todo.name} secondary={todo.datetime} />
+            <div id="todo-scroll">
+              <List style={{ width: "45vw" }} dense={true}>
+                {todos.map((todo) => (
+                  <ListItem id="todo-box" key={todo.id}>
+                    <ListItemText
+                      primary={todo.name}
+                      secondary={todo.datetime}
+                    />
 
-                  <ListItemSecondaryAction>
-                    <IconButton
-                      edge="end"
-                      aria-label="Edit"
-                      onClick={() => openUpdateDialog(todo)}
-                    >
-                      <Edit style={{ color: "rgb(175, 129, 250)" }} />
-                    </IconButton>
-                    <IconButton
-                      edge="end"
-                      aria-label="delete"
-                      onClick={() => deleteTodo(todo.id)}
-                    >
-                      <DeleteOutlineRounded
-                        style={{ color:"rgb(175, 129, 250" }}
-                      />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-              ))}
-            </List>
+                    <ListItemSecondaryAction>
+                      <IconButton
+                        edge="end"
+                        aria-label="Edit"
+                        onClick={() => openUpdateDialog(todo)}
+                      >
+                        <Edit style={{ color: "rgb(175, 129, 250)" }} />
+                      </IconButton>
+                      <IconButton
+                        edge="end"
+                        aria-label="delete"
+                        onClick={() => deleteTodo(todo.id)}
+                      >
+                        <DeleteOutlineRounded
+                          style={{ color: "rgb(175, 129, 250" }}
+                        />
+                      </IconButton>
+                    </ListItemSecondaryAction>
+                  </ListItem>
+                ))}
+              </List>
+            </div>
           </center>
 
           <Dialog open={open} onClose={handleClose}>

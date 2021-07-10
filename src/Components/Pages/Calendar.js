@@ -34,6 +34,7 @@ function Calendar() {
             return {
               id: doc.id,
               date: doc.data().date,
+              name: doc.data().name,
               start: doc.data().start,
               end: doc.data().end,
               details: doc.data().details,
@@ -66,12 +67,13 @@ function Calendar() {
               date={event.date}
               start={event.start}
               end={event.end}
+              name={event.name}
               details={event.details}
               organizer={event.organizer}
             />
           ))}
         </div>
-        <h4>Form Details:</h4>
+        <h4>Event Details:</h4>
        
         <div id="event-show-form" style={{ display: "none" }}>
         <HighlightOffIcon id="close_form_icon" style={{marginLeft:"90%"}} onClick={CloseEventForm}/>

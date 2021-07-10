@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: 0.8rem;
-  height: 30vh;
+  height: 25vh;
   overflow-y: scroll;
 }
 
@@ -110,3 +110,4 @@ h4{
 #close_form_icon:hover{
     color: rgb(128, 128, 128);
 }
+
