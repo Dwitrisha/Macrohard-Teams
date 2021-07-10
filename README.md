@@ -58,7 +58,7 @@ Password for all accounts: engage2021$
 3. Events are shown in card form in grid view. We can view full details on clicking view.
 4. Organizer name added automatically.
  
-  ### :rocket:*Application Architecture :*~
+  ### :rocket:<ins>*Application Architecture</ins>:*~
  ![Application Architecture](./Architecture.jpg)
  
  ### :rocket:*Tech Stack Used :*~
@@ -71,10 +71,10 @@ Password for all accounts: engage2021$
 - CSS
 - Firebase
 
- ### :rocket:*Details :*~
+ ### :rocket:<ins>*Details</ins>:*~
 Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
 
- ### :rocket:*Credits :*~
+ ### :rocket:<ins>*Credits</ins> :*~
 Video Meeting component was open-sourced and re-purposed from [Video Meeting](https://github.com/0x5eba/Video-Meeting). Additional features such as inviting participants via email etc. were added externally.
 
 Video chat functionalities were implemented using [WebRTC API](https://webrtc.org/) and [Socket.IO](https://socket.io/)
