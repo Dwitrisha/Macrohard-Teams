@@ -22,7 +22,7 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
   5. Realtime Chat              
   6. Audio mute/unmute
   7. Video on/off
-  8. Record screen(in development)
+  8. Record screen (in development)
   9. Start a meeting or Join with URL
 
 ---
