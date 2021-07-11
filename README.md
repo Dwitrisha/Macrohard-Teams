@@ -83,7 +83,7 @@ Todo App reference: [react-firebase-materialui-todo-app](https://github.com/ipsj
 
 Discussed project ideation with [Ananya Thapliyal](https://github.com/AnanyaThapliyal2303)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 ## Available Scripts
 
