@@ -58,7 +58,7 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
 3. Events are shown in card form in grid view. We can view full details on clicking view.
 4. Organizer name added automatically.
  
-  ## :rocket:<ins>*Application Architecture</ins>:*~
+  ## :rocket:<ins>*Solution Design</ins>:*~
  ![Application Architecture](./Architecture.jpg)
  
  ## :rocket:<ins>*Tech Stack Used</ins> :*~
