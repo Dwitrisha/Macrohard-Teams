@@ -31,6 +31,8 @@ function Todo() {
   const [update, setUpdate] = useState("");
   const [toUpdateId, setToUpdateId] = useState("");
 
+  //upload to db
+
   useEffect(() => {
     db.collection("todos")
       .orderBy("datetime", "desc")
@@ -48,6 +50,8 @@ function Todo() {
       });
   }, []);
 
+
+  //add a todo
   const addTodo = (event) => {
     event.preventDefault();
     db.collection("todos").add({
@@ -57,6 +61,7 @@ function Todo() {
     setInput("");
   };
 
+  //delete a todo
   const deleteTodo = (id) => {
     db.collection("todos")
       .doc(id)
@@ -110,7 +115,7 @@ function Todo() {
               disabled={!input}
               startIcon={<AddCircleOutlineRounded />}
             >
-              Add Todo
+              Add Task
             </Button>
           </form>
           <center>

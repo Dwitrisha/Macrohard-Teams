@@ -12,22 +12,27 @@ import DarkMode from "./Pages/Modes/DarkMode";
 import LightMode from "./Pages/Modes/LightMode";
 import { useStateValue } from "./Pages/StateProvider";
 
+//show options div
 function Show_Options() {
   if (document.getElementById("settings_menu").style.display === "none")
     document.getElementById("settings_menu").style.display = "block";
   else document.getElementById("settings_menu").style.display = "none";
 }
 
-function showLogout(){
- if(document.getElementById("logout-div").style.display==="none") 
- document.getElementById("logout-div").style.display="block";
- else
- document.getElementById("logout-div").style.display="none";
+//show logout button on click
+function showLogout() {
+  if (document.getElementById("logout-div").style.display === "none")
+    document.getElementById("logout-div").style.display = "block";
+  else document.getElementById("logout-div").style.display = "none";
 }
 
-function Logout(){
+//logout function
+
+function Logout() {
   window.location.replace("https://macrohard-teams.web.app/");
 }
+
+//search function connected to searchbar and looks through inner HTML when input is added to searchbar
 
 function search_bar() {
   let input = document.getElementById("searchbar").value;
@@ -43,12 +48,9 @@ function search_bar() {
       } else {
         x[i].style.visibility = "visible";
         x[i].style.height = "4rem";
-     
       }
     }
   }
-
-  
 }
 
 function Header() {
@@ -67,14 +69,14 @@ function Header() {
         />
 
         <div id="header_right">
-          <img id="user_image" src={user?.photoURL} onClick={showLogout}/>
+          <img id="user_image" src={user?.photoURL} onClick={showLogout} />
           <MoreHorizIcon
             style={{ color: "white", fontSize: 25 }}
             id="settings_icon"
             onClick={Show_Options}
           />
         </div>
-      
+
         <div id="settings_menu">
           <h3 id="theme_heading">Themes</h3>
           <img className="settings_menu_img" src={Dark} onClick={DarkMode} />
@@ -85,9 +87,9 @@ function Header() {
           </p>
         </div>
       </div>
-      <div id="logout-div" style={{display:"none"}}>
-          <Button onClick={Logout}>Logout</Button>
-        </div>
+      <div id="logout-div" style={{ display: "none" }}>
+        <Button onClick={Logout}>Logout</Button>
+      </div>
     </div>
   );
 }

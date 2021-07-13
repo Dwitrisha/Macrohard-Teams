@@ -13,6 +13,9 @@ const Event = () => {
   const [name, setName] = useState("");
   const [details, setDetails] = useState("");
 
+
+  //create new event on submit
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     db.collection("events")

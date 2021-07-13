@@ -1,4 +1,4 @@
-import React, { Component,useState} from "react";
+import React, { Component, useState } from "react";
 import { Input, Button, IconButton } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "./Home.css";
@@ -18,9 +18,9 @@ class Home extends Component {
     };
   }
 
-
-
   handleChange = (e) => this.setState({ url: e.target.value });
+
+  //if user is joining existing meeting
 
   join = () => {
     if (this.state.url !== "") {
@@ -30,28 +30,29 @@ class Home extends Component {
   };
 
   render() {
- 
+    //if new meeting is started
     function start() {
       var url = Math.random().toString(36).substring(2, 7);
-      window.open(`/${url}`,'_blank');
-     
-      db.collection("rooms").add({
-        name:"Meeting Room: "+url,
-    })
-    .then((docRef) => {
-       var roomId=docRef.id;
-       db.collection("meetingLink").add({
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        meetingUrl: url,
-        fullUrl: url + " " +roomId,
-        roomId: roomId,
-      });
-    })
-    .catch((error) => {
-        console.error("Error adding document: ", error);
-    });
-  
-     
+      window.open(`/${url}`, "_blank");
+
+      //create a new room corresponding to the meeting automatically
+
+      db.collection("rooms")
+        .add({
+          name: "Meeting Room: " + url,
+        })
+        .then((docRef) => {
+          var roomId = docRef.id;
+          db.collection("meetingLink").add({
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            meetingUrl: url,
+            fullUrl: url + " " + roomId,
+            roomId: roomId,
+          });
+        })
+        .catch((error) => {
+          console.error("Error adding document: ", error);
+        });
     }
 
     return (

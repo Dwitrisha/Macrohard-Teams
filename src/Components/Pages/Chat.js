@@ -13,11 +13,13 @@ import firebase from "firebase";
 import { useStateValue } from "../Pages/StateProvider";
 import db, { storage } from "./firebase";
 import CloseIcon from "@material-ui/icons/Close";
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from "react-custom-scrollbars";
 import "emoji-mart/css/emoji-mart.css";
 import { Picker } from "emoji-mart";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
 import emoji from "emoji-mart/dist-es/components/emoji/emoji";
+
+//show emoji picker
 
 function showEmoji() {
   var x = document.getElementById("Emoji_List");
@@ -28,16 +30,19 @@ function showEmoji() {
   }
 }
 
-
+//show upload options
 function showUpload() {
   if (document.getElementById("file_upload").style.display === "none")
     document.getElementById("file_upload").style.display = "block";
   else document.getElementById("file_upload").style.display = "none";
 }
+
+//once uploaded close the upload div
 function closeUpload() {
   document.getElementById("file_upload").style.display = "none";
 }
 function Chat() {
+  //setting all states
   const [file, setFile] = useState(null);
   const [progress, setProgress] = useState(0);
 
@@ -52,6 +57,8 @@ function Chat() {
   const [{ user }, dispatch] = useStateValue();
 
   useEffect(() => {
+    //setting room name for each conversation
+
     if (roomId) {
       db.collection("rooms")
         .doc(roomId)
@@ -67,6 +74,7 @@ function Chat() {
     }
   }, [roomId]);
 
+  //function executed when send icon is clicked
   const sendText = (e) => {
     e.preventDefault();
     db.collection("rooms").doc(roomId).collection("messages").add({
@@ -78,15 +86,15 @@ function Chat() {
     setInput("");
   };
 
-const clickEmoji=(e)=>{
+  //function executed when emoji is clicked
+  const clickEmoji = (e) => {
     db.collection("rooms").doc(roomId).collection("messages").add({
-      message:e,
+      message: e,
       name: user.displayName,
       photo: user.photoURL,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
-  }
-  
+  };
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
@@ -94,6 +102,7 @@ const clickEmoji=(e)=>{
     }
   };
 
+  //upload function
   const handleUpload = () => {
     const uploadTask = storage.ref(`files/${file.name}`).put(file);
 
@@ -122,7 +131,7 @@ const clickEmoji=(e)=>{
               .doc(roomId)
               .collection("messages")
               .add({
-                message: "File Uploaded: "+url,
+                message: "File Uploaded: " + url,
                 name: user.displayName,
                 photo: user.photoURL,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -150,7 +159,7 @@ const clickEmoji=(e)=>{
     db.collection("meetingLink").add({
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       meetingUrl: url,
-      fullUrl: url + " " +roomId,
+      fullUrl: url + " " + roomId,
       roomId: roomId,
     });
 
@@ -173,10 +182,8 @@ const clickEmoji=(e)=>{
       <div className="messenger">
         <Sidebar />
         <div id="chat_menu">
-          <Scrollbars  autoHide
-        autoHideTimeout={1000}
-        autoHideDuration={200}>
-          <ConversationBar />
+          <Scrollbars autoHide autoHideTimeout={1000} autoHideDuration={200}>
+            <ConversationBar />
           </Scrollbars>
         </div>
 
@@ -184,7 +191,7 @@ const clickEmoji=(e)=>{
           {roomName}
           <VideoCallIcon
             id="video_call_icon"
-            style={{ fontSize: 30 ,marginLeft:"1rem"}}
+            style={{ fontSize: 30, marginLeft: "1rem" }}
             onClick={join}
           />
         </div>

@@ -18,17 +18,12 @@
   font-size: 1rem;
   margin-top: 0.8rem;
   box-shadow: 2px 2px 4px rgb(126, 126, 126);
-
-  
 }
 
 .message_time {
   font-size: 13px;
   margin-top: 1px;
   margin-bottom: 3px;
-
-
-  
 }
 .message {
   display: flex;

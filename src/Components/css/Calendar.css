@@ -63,7 +63,6 @@
   padding-left: 1.2rem;
   z-index: 999;
   position: fixed;
-
 }
 
 .form_input {
@@ -87,27 +86,26 @@
   font-weight: 500;
 }
 
-#form-grid{
-    display: grid;
-grid-template-rows: 1fr;
-grid-template-columns: 1fr 1fr 1fr;
+#form-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#483285;
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #483285;
 }
 
-#note{
-    font-size: 1rem;
+#note {
+  font-size: 1rem;
 }
 
-#close_form_icon{
-    color: #33335f;
-    font-size: 1.5rem;
+#close_form_icon {
+  color: #33335f;
+  font-size: 1.5rem;
 }
 
-#close_form_icon:hover{
-    color: rgb(128, 128, 128);
+#close_form_icon:hover {
+  color: rgb(128, 128, 128);
 }
-

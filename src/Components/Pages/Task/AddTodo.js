@@ -23,6 +23,8 @@ import {
 } from "@material-ui/core";
 
 const AddTodo = () => {
+
+  //declaring states to add todo
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
 

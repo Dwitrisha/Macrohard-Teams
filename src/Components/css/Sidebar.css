@@ -1,17 +1,14 @@
-#Sidebar_column
-{
-    background-color: #eeecf7;
-    width:11vh;
-    height: 93vh; 
-    box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.4);
-    padding-right:0.1rem;
-    padding-top: 2rem;
-    position:fixed;
-    margin-top: 6.8vh;
-   
+#Sidebar_column {
+  background-color: #eeecf7;
+  width: 11vh;
+  height: 93vh;
+  box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4);
+  padding-right: 0.1rem;
+  padding-top: 2rem;
+  position: fixed;
+  margin-top: 6.8vh;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-

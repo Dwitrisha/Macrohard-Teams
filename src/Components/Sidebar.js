@@ -14,6 +14,10 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import CreateNewFolderIcon from "@material-ui/icons/CreateNewFolder";
 
+// function to pass props to SidebarOption and links all pages in the app
+
+//responsible for navigation from page to page
+
 function Sidebar() {
   return (
     <div>

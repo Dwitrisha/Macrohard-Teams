@@ -3,7 +3,9 @@ import "../styles/FileCard.css";
 
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 
-const FileCard = ({ name, fileUrl ,username}) => {
+//each item card
+
+const FileCard = ({ name, fileUrl, username }) => {
   return (
     <div>
       <a href={fileUrl} target="_blank" download>
@@ -13,9 +15,10 @@ const FileCard = ({ name, fileUrl ,username}) => {
           </div>
 
           <div className="fileCard--bottom">
-            <p className="item-name">{name}
-            <br/>
-           ~{username}</p>
+            <p className="item-name">
+              {name}
+              <br />~{username}
+            </p>
           </div>
         </div>
       </a>

@@ -21,7 +21,7 @@ body {
 }
 
 #call_button {
-  width:11vw;
+  width: 11vw;
   height: 30px;
   border-radius: 25px;
   outline: none;
@@ -73,14 +73,13 @@ body {
 }
 
 #call_url {
-  
-  width:13vw;
+  width: 13vw;
   border: 2px solid#464775;
   border-radius: 5px;
   background-color: white;
 }
 
-#join_grid{
+#join_grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;

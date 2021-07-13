@@ -5,6 +5,9 @@ import db from "../firebase";
 
 function EventBox(props) {
   const [events, setEvents] = useState([]);
+
+  //delete event on click from db
+
   const deleteEvent = (id) => {
     db.collection("events")
       .doc(id)
@@ -21,11 +24,11 @@ function EventBox(props) {
     var date = props.date;
     var organizer = props.organizer;
 
-    document.getElementById("event-show-form").style.display="block"
+    document.getElementById("event-show-form").style.display = "block";
     document.getElementById("event-show-date").value = date;
-    document.getElementById("event-show-time").value=start+"-"+end;
-    document.getElementById("event-show-details").value=details;
-    document.getElementById("event-show-organizer").value=organizer;
+    document.getElementById("event-show-time").value = start + "-" + end;
+    document.getElementById("event-show-details").value = details;
+    document.getElementById("event-show-organizer").value = organizer;
   };
 
   return (
@@ -42,7 +45,6 @@ function EventBox(props) {
           View
         </button>
       </div>
-    
     </div>
   );
 }

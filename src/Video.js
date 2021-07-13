@@ -69,19 +69,18 @@ const getAllEvents = async () => {
 };
 
 function showRecorder() {
-  alert("Please allow sharing to start recording.");
+  alert("This function is still in development!");
   if (document.getElementById("recording-div").style.display === "none") {
     document.getElementById("recording-div").style.display = "block";
 
     const RecordView = () => {
       const { status, startRecording, stopRecording, mediaBlobUrl } =
-        useReactMediaRecorder({ video: true });
+        useReactMediaRecorder({ screen: true });
     };
   } else {
     document.getElementById("recording-div").style.display = "none";
   }
 }
-
 
 //Mailing
 
@@ -98,6 +97,7 @@ function CloseRecorder() {
   }
 }
 
+//Send email function
 function sendEmail(e) {
   e.preventDefault();
 
@@ -118,7 +118,7 @@ function sendEmail(e) {
       }
     );
 }
-
+//show mail send div
 function showMail() {
   if (document.getElementById("email_icon") != null) {
     if (document.getElementById("email_form").style.display === "none") {
@@ -296,6 +296,8 @@ class Video extends Component {
     );
   };
 
+  //check for state
+
   getDislayMedia = () => {
     if (this.state.screen) {
       if (navigator.mediaDevices.getDisplayMedia) {
@@ -403,6 +405,7 @@ class Video extends Component {
     }
   };
 
+  //CSS for the video call page
   changeCssVideos = (main) => {
     let widthMain = main.offsetWidth;
     let minWidth = "30%";
@@ -482,7 +485,7 @@ class Video extends Component {
               `[data-socket="${socketListId}"]`
             );
             if (searchVidep !== null) {
-              // if i don't do this check it make an empyt square
+              // if i don't do this check it make an empty square
               searchVidep.srcObject = event.stream;
             } else {
               elms = clients.length;
@@ -550,6 +553,8 @@ class Video extends Component {
     });
   };
 
+  //basic functions declarations for video call page
+
   silence = () => {
     let ctx = new AudioContext();
     let oscillator = ctx.createOscillator();
@@ -598,18 +603,18 @@ class Video extends Component {
 
   handleUsername = (e) => this.setState({ username: e.target.value });
 
+  //if send message is click then trigger this onClick event
+
   sendMessage = () => {
     getAllEvents().then((meetingLink) => {
       var meeting_link_data = JSON.stringify(meetingLink);
       var length = meeting_link_data.length;
-
+      socket.emit("chat-message", this.state.message, this.state.username);
       for (var n = 0; n < length; n++) {
         if (meeting_link_data.charAt(n) === "f") var pos = n;
         var link = meeting_link_data.substring(pos, pos + 7);
         if (link === "fullUrl") {
           var roomId = meeting_link_data.substring(pos + 16, pos + 36);
-          socket.emit("chat-message", this.state.message, this.state.username);
-
           //Enter message in normal chat db
           db.collection("rooms")
             .doc(roomId)
@@ -630,6 +635,7 @@ class Video extends Component {
     });
   };
 
+  //copy URL to send to invitees
   copyUrl = () => {
     let text = window.location.href;
     if (!navigator.clipboard) {
@@ -666,6 +672,7 @@ class Video extends Component {
         <Header />
         <div id="video_page">
           <Sidebar />
+
           {this.state.askForUsername === true ? (
             <div id="video_div">
               <div
@@ -850,8 +857,6 @@ class Video extends Component {
 
                     <div id="recorder">
                       <ReactMediaRecorder
-                    
-                        screen
                         render={({
                           status,
                           startRecording,
@@ -862,10 +867,7 @@ class Video extends Component {
                             style={{ position: "fixed", display: "none" }}
                             id="recording-div"
                           >
-                            <button
-                              onClick={startRecording}
-                              id="start-button"
-                            >
+                            <button onClick={startRecording} id="start-button">
                               Start
                             </button>
 
@@ -946,9 +948,6 @@ class Video extends Component {
                   >
                     <video
                       id="my-video"
-                      playsinline
-                      autoplay
-                      muted
                       ref={this.localVideoref}
                       autoPlay
                       muted
@@ -961,8 +960,6 @@ class Video extends Component {
                         height: "100%",
                       }}
                     ></video>
-
-                    <pre id="log"></pre>
                   </Row>
                 </div>
               </div>

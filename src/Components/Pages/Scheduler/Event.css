@@ -22,11 +22,12 @@
   color: white;
 }
 
-#text_area{
-  width:93%;
-  margin-left:0.5rem;
+#text_area {
+  width: 93%;
+  margin-left: 0.5rem;
 }
-#submit_button,#view_button {
+#submit_button,
+#view_button {
   width: 4rem;
   color: rgb(255, 255, 255);
   background-color: rgb(59, 12, 145);
@@ -37,14 +38,16 @@
   margin-top: 0.5rem;
 }
 
-#submit_button:hover,#view_button:hover{
+#submit_button:hover,
+#view_button:hover {
   transform: translatey(3px);
   box-shadow: none;
 }
 
 /* buttons hover Animation */
 
-#submit_button:hover,#view_button:hover {
+#submit_button:hover,
+#view_button:hover {
   animation: ani9 0.4s ease-in-out infinite alternate;
 }
 @keyframes ani9 {

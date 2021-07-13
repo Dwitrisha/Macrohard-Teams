@@ -23,13 +23,13 @@ function LightMode() {
     document.getElementById("chat_menu").style.backgroundColor = "#f0f0f0";
     document.getElementById("chat_menu_heading").style.color = "black";
     document.getElementById("message_heading").style.color = "black";
-  
-      let x = document.getElementsByClassName("conversation");
-      for (var i = 0; i < x.length; i++) {
-          x[i].style.color = "black";
-          x[i].style.backgroundColor = "rgba(99, 99, 99, 0)";
-        }
-    
+
+    let x = document.getElementsByClassName("conversation");
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.color = "black";
+      x[i].style.backgroundColor = "rgba(99, 99, 99, 0)";
+    }
+
     document.getElementById("chat_box").style.backgroundColor = "#f5f5f5";
     document.getElementById("chat_box_bottom").style.backgroundColor =
       "#f5f5f5";

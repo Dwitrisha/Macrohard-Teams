@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/SidebarOption.css";
 
+//function that accepts props and displays sidebar options
 
 function SidebarOption(props) {
   return (

@@ -10,6 +10,8 @@ import { Scrollbars } from "react-custom-scrollbars";
 import AddIcon from "@material-ui/icons/Add";
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
+//show form on click
+
 function ShowEventForm() {
   if (document.getElementById("event_add_form").style.display === "none")
     document.getElementById("event_add_form").style.display = "block";
@@ -24,6 +26,8 @@ function CloseEventForm() {
 function Calendar() {
   const { eventId } = useParams();
   const [events, setEvents] = useState([]);
+
+  //add to events db on form submission
 
   useEffect(() => {
     db.collection("events")

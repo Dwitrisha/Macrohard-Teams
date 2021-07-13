@@ -144,9 +144,8 @@ body {
   border: solid 2px #989bec;
   color: #6062a1;
   width: 17vw;
-  height:2.1rem;
+  height: 2.1rem;
   margin-top: 0;
-  
 }
 
 #link {
@@ -173,24 +172,19 @@ body {
   color: rgb(39, 39, 39);
 }
 
-#close_button:hover,#closerecord_button:hover {
+#close_button:hover,
+#closerecord_button:hover {
   color: rgb(114, 114, 114);
 }
 
-
 .contact-form {
-  background-image: linear-gradient(
-    to bottom,
-    #6062a1,
-    rgb(177, 178, 228)
-  );
+  background-image: linear-gradient(to bottom, #6062a1, rgb(177, 178, 228));
   border-radius: 5px;
   width: 25vw;
   padding: 0.5rem;
   margin-left: 35%;
   box-shadow: 2px 2px 4px grey;
-  height:35vh;
-
+  height: 35vh;
 }
 #send_button:hover {
   transform: translatey(3px);
@@ -211,51 +205,46 @@ body {
   }
 }
 
-
-#transcription-container{
-  position:fixed;
+#transcription-container {
+  position: fixed;
   margin-left: 28%;
   z-index: 200000;
   margin-top: 61vh;
- 
 }
 
-#recorder_button{
+#recorder_button {
   margin-top: 0.5rem;
 }
 
-
-#recording-div{
-  padding:0rem;
- background-color:white ;
+#recording-div {
+  padding: 0rem;
+  background-color: white;
   border-radius: 5px;
   z-index: 999;
   margin-left: 52.5%;
-  width:60vh;
+  width: 60vh;
   margin-top: -2.5rem;
 }
 
-
-#start-button{
+#start-button {
   border: solid 2px green;
   border-radius: 25px;
-  width:3rem;
-  color:green;
+  width: 3rem;
+  color: green;
   background-color: white;
   margin: 0.5rem;
 }
 
-
-#stop-button{
+#stop-button {
   border: solid 2px red;
   border-radius: 25px;
-  width:3rem;
-  color:red;
+  width: 3rem;
+  color: red;
   background-color: white;
   margin: 0.5rem;
 }
 
-#start-button:hover,#stop-button:hover{
+#start-button:hover,
+#stop-button:hover {
   background-color: #dddef8;
-
 }
