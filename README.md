@@ -60,7 +60,8 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
 1. Add Events using Datepicker, then events are arranged in order of descendance
 2. Delete the events as required
 3. Events are shown in card form in grid view. We can view full details on clicking view
-4. Organizer name added automatically
+4. Ability to add meeting link in details
+5. Organizer name added automatically
 
  ## :rocket:<ins>*Roadmap</ins>:*~
  1.Implement Dark Mode on all pages\
