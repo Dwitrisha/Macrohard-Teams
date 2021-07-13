@@ -16,6 +16,8 @@ const Transcription = () => {
 
   //check if transcription mic is switched on or not
   if (record != null) {
+
+    //only transcript if mic is on
     if (record === true) {
       SpeechRecognition.startListening();
       document.getElementById("transcription_input").value = transcript;

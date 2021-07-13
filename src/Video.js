@@ -68,6 +68,8 @@ const getAllEvents = async () => {
   return meeting_link;
 };
 
+//show recorder div
+
 function showRecorder() {
   alert("This function is still in development!");
   if (document.getElementById("recording-div").style.display === "none") {
@@ -663,6 +665,7 @@ class Video extends Component {
     );
   };
 
+  //check for username
   connect = () =>
     this.setState({ askForUsername: false }, () => this.getMedia());
 
