@@ -4,6 +4,7 @@
 ### <ins>Demo Video:</ins> [https://www.youtube.com/watch?v=CZY8IjJVv-U](https://www.youtube.com/watch?v=CZY8IjJVv-U)
 
  ###  :star: Adopt Feature Implemented :heavy_check_mark:
+ ###  :star:Special Feature: Live Video Transcription using Speech-to-Text Recognition NLP
 
 ### :key: <ins>Login Instructions:</ins>
 Please use a Gmail account for Google authentication. Any Gmail account can be used to login. If you do not wish to use you personal account, the following Gmail accounts can be used for Google authentication:
