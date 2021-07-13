@@ -59,8 +59,8 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
 4. Organizer name added automatically.
 
  ## :rocket:<ins>*Roadmap</ins>:*~
- 1.Implement Dark Mode
- 2. Complete Screen sharing feature
+ 1.Implement Dark Mode\
+ 2. Complete Screen sharing feature\
  3. Implement permissions to view files
  
   ## :rocket:<ins>*Solution Design</ins>:*~
