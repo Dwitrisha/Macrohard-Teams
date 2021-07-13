@@ -44,7 +44,7 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
 ### :large_blue_diamond: <ins>Drive for Files</ins> 
   1. Easily upload files of any format to the drive with just 2-3 clicks
   2. All the files uploaded and shown in order of time uploaded with file name, user name, size of file and date of last modification
-  3. The files are presented in both grid (card) and list form\
+  3. The files are presented in both grid (card) and list form
   4. Users can view the file by just clicking on name or card
   
 ### :large_blue_diamond: <ins>Tasks</ins> 
