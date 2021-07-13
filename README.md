@@ -27,10 +27,10 @@ Please use a Gmail account for Google authentication. Any Gmail account can be u
 
 ---
  ### :video_camera: Adopt Feature:
-:boom: Users have the option to create a room to start a conversation whenever they want.\
-:boom: Start a video call feature is available both within the chat room itself and under the Call tab.\
-:boom: It is not compulsory to create a chat room from prior, a new chat room is created as soon as a meeting is started under the Call tab and if no chat room is pre-existing for it.\
-:boom: Conversations are recorded in the database before the meeting, during the meeting and after the meeting without any interruption and the realtime chat within meeting is stored in the database and available in the room even after meeting is ended.
+:boom: Users have the option to create a room to start a conversation whenever they want\
+:boom: Start a video call feature is available both within the chat room itself and under the Call tab\
+:boom: It is not compulsory to create a chat room from prior, a new chat room is created as soon as a meeting is started under the Call tab and if no chat room is pre-existing for it\
+:boom: Conversations are recorded in the database before the meeting, during the meeting and after the meeting without any interruption and the realtime chat within meeting is stored in the database and available in the room even after meeting is ended
 
 ---
 
